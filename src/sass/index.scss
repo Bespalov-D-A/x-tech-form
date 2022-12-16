@@ -1,5 +1,9 @@
+@import './variables.scss';
+@import './fontFace.scss';
+@import './mixin/fontMixin.scss';
 @import './font.scss';
 
 body {
 	font-family: 'Roboto';
+	font-size: 18px;
 }

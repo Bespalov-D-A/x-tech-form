@@ -1,0 +1,26 @@
+@import "./mediaMixin.scss";
+
+@mixin font-size($listH) {
+	font-size: nth($listH, 1);
+	line-height: nth($listH, 2);
+	@include media("min", "xl") {
+		font-size: nth($listH, 1);
+		line-height: nth($listH, 2);
+	}
+	@include media("within", "xl") {
+		font-size: nth($listH, 3);
+		line-height: nth($listH, 4);
+	}
+	@include media("within", "lg") {
+		font-size: nth($listH, 5);
+		line-height: nth($listH, 6);
+	}
+	@include media("within", "md") {
+		font-size: nth($listH, 7);
+		line-height: nth($listH, 8);
+	}
+	@include media("max", "sm") {
+		font-size: nth($listH, 9);
+		line-height: nth($listH, 10);
+	}
+}
