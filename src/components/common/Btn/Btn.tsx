@@ -5,7 +5,7 @@ interface BtnI {
 	title: string;
 	pLeft: number;
 	pRight: number;
-	primary?: boolean;
+	primary: boolean;
 }
 
 const Btn: FC<BtnI> = (props) => {

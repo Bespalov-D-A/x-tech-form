@@ -1,3 +1,5 @@
+@import './../../sass/colors.scss';
+
 .menu-wrap {
 	display: flex;
 	flex-flow: row wrap;
@@ -23,6 +25,31 @@
 	margin-right: 60px;
 	&:last-child {
 		margin-right: 0;
+	}
+	&.active {
+		position: relative;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 24px;
+			border-bottom: solid 2px $blue1;
+			z-index: -1;
+		}
+		a {
+			color: $gray1;
+		}
+	}
+	a {
+		font-size: 16px;
+		text-decoration: none;
+		color: $gray4;
+		&:hover {
+			color: $gray3;
+		}
 	}
 }
 
