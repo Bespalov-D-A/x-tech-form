@@ -16,6 +16,7 @@
 
 .menu {
 	display: flex;
+	margin-right: 80px;
 }
 
 .menu-block {
@@ -23,4 +24,8 @@
 	&:last-child {
 		margin-right: 0;
 	}
+}
+
+.right {
+	display: flex;
 }

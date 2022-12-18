@@ -1,10 +1,10 @@
-@import './../css/reset.css';
 @import './variables.scss';
 @import './fontFace.scss';
 @import './mixin/fontMixin.scss';
 @import './font.scss';
+@import './colors.scss';
 
 body {
-	font-family: 'Roboto';
+	font-family: 'IBM_plex_mono';
 	font-size: 18px;
 }
