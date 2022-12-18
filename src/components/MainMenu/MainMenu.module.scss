@@ -1,0 +1,58 @@
+@import './../../sass/colors.scss';
+
+.menu-wrap {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	padding: 0 80px;
+}
+
+.menu {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	margin-right: 80px;
+}
+
+.menu-block {
+	margin-right: 60px;
+	&:last-child {
+		margin-right: 0;
+	}
+	&.active {
+		position: relative;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 24px;
+			border-bottom: solid 2px $blue1;
+			z-index: -1;
+		}
+		a {
+			color: $gray1;
+		}
+	}
+	a {
+		font-size: 16px;
+		text-decoration: none;
+		color: $gray4;
+		&:hover {
+			color: $gray3;
+		}
+	}
+}
+
+.right {
+	display: flex;
+}
