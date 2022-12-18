@@ -1,6 +1,7 @@
 @import "./../../../sass/index.scss";
 
 .btn {
+	position: relative;
 	display: inline-flex;
 	align-items: center;
 	height: 56px;
@@ -13,21 +14,164 @@
 	color: $blue1;
 	box-shadow: 0px 2px 4px rgba(73, 67, 98, 0.03),
 		0px 3px 8px rgba(73, 67, 98, 0.05), 0px 4px 16px rgba(73, 67, 98, 0.15);
-		transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
+	z-index: 1;
 	&.primary {
 		border: none;
 		color: #fff;
 		background: $blue1;
-		box-shadow: 0px 2px 4px rgba(62, 100, 200, 0.1), 0px 3px 8px rgba(62, 100, 200, 0.15), 0px 4px 16px rgba(62, 100, 200, 0.4);
+		box-shadow: 0px 2px 4px rgba(62, 100, 200, 0.1),
+			0px 3px 8px rgba(62, 100, 200, 0.15), 0px 4px 16px rgba(62, 100, 200, 0.4);
 		&:hover {
-		background: $blue2;
-		box-shadow: none;
+			background: $blue2;
+			box-shadow: none;
 		}
 	}
 
 	&:hover {
-	background: $white;
+		background: $white;
 		box-shadow: none;
 		cursor: pointer;
+	}
+}
+
+.arrow {
+	position: absolute;
+	right: -56px;
+	top: 0;
+	bottom: 0;
+	height: 56px;
+	width: 56px;
+	transition: all ease-in-out 0.2s;
+	background-image: linear-gradient(
+			45deg,
+			transparent 50%,
+			50%,
+			#fff calc(50% + 5px),
+			calc(50% + 5px),
+			#fff 0
+		),
+		linear-gradient(
+			-225deg,
+			transparent 50%,
+			50%,
+			#fff calc(50% + 5px),
+			calc(50% + 5px),
+			#fff 0
+		);
+	background-repeat: no-repeat;
+	z-index: 0;
+	background-color: $blue1;
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		height: 56px;
+		width: 56px;
+		transition: all ease-in-out 0.2s;
+		background-image: linear-gradient(
+				45deg,
+				transparent 50%,
+				50%,
+				transparent calc(50% + 5px),
+				calc(50% + 5px),
+				$blue1 0
+			),
+			linear-gradient(
+				-225deg,
+				transparent 50%,
+				50%,
+				transparent calc(50% + 5px),
+				calc(50% + 5px),
+				$blue1 0
+			);
+		background-repeat: no-repeat;
+		z-index: 1;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		display: block;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		height: 56px;
+		width: 56px;
+		transition: all ease-in-out 0.2s;
+		background-image: linear-gradient(
+				45deg,
+				transparent calc(50% + 10px),
+				calc(50% + 0px),
+				#fff 0
+			),
+			linear-gradient(
+				-225deg,
+				transparent calc(50% + 10px),
+				calc(50% + 10px),
+				#fff 0
+			);
+
+		z-index: 1;
+		background-repeat: no-repeat;
+	}
+}
+
+.btn.primary:hover {
+	.arrow {
+		background-color: $blue2;
+	background-image: linear-gradient(
+			45deg,
+			transparent 50%,
+			50%,
+			#c6d1ef calc(50% + 5px),
+			calc(50% + 5px),
+			#c6d1ef 0
+		),
+		linear-gradient(
+			-225deg,
+			transparent 50%,
+			50%,
+			#c6d1ef calc(50% + 5px),
+			calc(50% + 5px),
+			#c6d1ef 0
+		);
+
+		&:before {
+			right: -5px;
+			background-image: linear-gradient(
+					45deg,
+					transparent 50%,
+					50%,
+					transparent calc(50% + 10px),
+					calc(50% + 10px),
+					$blue2 0
+				),
+				linear-gradient(
+					-225deg,
+					transparent 50%,
+					50%,
+					transparent calc(50% + 10px),
+					calc(50% + 10px),
+					$blue2 0
+				);
+		}
+		&:after {
+			right: -5px;
+			background-image: linear-gradient(
+					45deg,
+					transparent calc(50% + 15px),
+					calc(50% + 0px),
+					#fff 0
+				),
+				linear-gradient(
+					-225deg,
+					transparent calc(50% + 15px),
+					calc(50% + 10px),
+					#fff 0
+				);
+		}
 	}
 }
