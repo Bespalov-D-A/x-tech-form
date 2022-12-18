@@ -1,10 +1,12 @@
-import Btn from "./components/common/Btn/Btn";
+import Header from "./components/Header/Header";
+import MainMenu from "./components/MainMenu/MainMenu";
 
 function App() {
   return (
     <div>
-      <h1>Hellow world</h1>
-      <Btn title="Узнать условия" pRight={50} pLeft={50} primary={true}/>
+      <MainMenu />
+      <Header />
+      <h1>Hello world</h1>
     </div>
   );
 }
