@@ -1,19 +1,8 @@
 @import "./../func/getPreviousSize.scss";
 @import "./../variables.scss";
 
-//Равносильно @media screen and (min-width: *значение до lg*) and (max-width: lg)
+/*Равносильно @media screen and (min-width: *значение до lg*) and (max-width: lg)*/
 /*@include media("within", "lg") {*/
-  /*background: red;*/
-/*}*/
-
-//@meida screen and (max-width: xl)
-/*@include media("max", "xl") {*/
-  /*background: red;*/
-/*}*/
-
-
-//@meida screen and (min-width: xl)
-/*@include media("min", "xl") {*/
   /*background: red;*/
 /*}*/
 

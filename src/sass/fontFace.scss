@@ -1,6 +1,5 @@
 @import "./mixin/fontMixin.scss";
 
-//Roboto
 @include font-face(
 	"Roboto",
 	"./../../fonts/Roboto/Roboto-Regular",
@@ -9,7 +8,7 @@
 );
 @include font-face("Roboto", "./../../fonts/Roboto/Roboto-Bold", 700, "bold");
 
-//IBM_plex_mono
+/*IBM_plex_mono*/
 @include font-face(
 	"IBM_plex_mono",
 	"./../../fonts/IBM_plex_mono/IBMPlexMono-Regular"
@@ -27,7 +26,7 @@
 	"semibold"
 );
 
-//IBM_plex_sans
+/*IBM_plex_sans*/
 @include font-face(
 	"IBM_plex_sans",
 	"./../../fonts/IBM_plex_sans/IBMPlexSans-Bold",
@@ -41,7 +40,7 @@
 	"semibold"
 );
 
-//PT_sans_caption
+/*PT_sans_caption*/
 @include font-face("PT_sans", "./../../fonts/PT_sans/PTSansCaption-Regular");
 @include font-face(
 	"PT_sans",
@@ -50,7 +49,7 @@
 	"bold"
 );
 
-//Commissioner
+/*Commissioner*/
 @include font-face(
 	"Commissioner",
 	"./../../fonts/commissioner/Commissioner-Regular"
@@ -62,10 +61,10 @@
 	"bold"
 );
 
-//Jost
+/*Jost*/
 @include font-face("Jost", "./../../fonts/jost/Jost-Bold", 700, "bold");
 
-//Montserrat
+/*Montserrat*/
 @include font-face("Montserrat", "./../../fonts/montserrat/Montserrat-Regular");
 @include font-face(
 	"Montserrat",
@@ -80,10 +79,10 @@
 	semibold
 );
 
-//Sanchez
+/*Sanchez*/
 @include font-face('Sanchez', './../../fonts/sanchez/Sanchez-Regular');
 
-//Ubuntu
+/*Ubuntu*/
 @include font-face('Ubuntu', './../../fonts/ubuntu/Ubuntu-Regular');
 @include font-face('Ubuntu', './../../fonts/ubuntu/Ubuntu-Bold', 700, 'bold');
 @include font-face('Ubuntu', './../../fonts/ubuntu/Ubuntu-Medium', 500, 'medium');

@@ -1,7 +1,7 @@
 @import './mixin/fontSizeMixin.scss';
 
-//каждые 2 числа это font size line-height для каждого брикпоинта
-//        Standart    min xl   xl > lg   lg > md   max md
+/*каждые 2 числа это font size line-height для каждого брикпоинта*/
+/*         Standart    min xl   xl > lg   lg > md   max md   */
 $listH1: (48px 56px 48px 56px 32px 40px 32px 40px 24px 32px);
 h1 {
 	@include font-size($listH1);
