@@ -1,0 +1,63 @@
+@import "./../../sass/index.scss";
+
+.wrap {
+	position: relative;
+	max-width: 1920px;
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 504px;
+		bottom: 0;
+
+		background: $cream;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		display: block;
+		top: 0;
+		right: -60px;
+		width: 564px;
+		height: 402px;
+		background: url("./../../img/other/X.svg") no-repeat;
+		background-position: center center;
+	}
+}
+
+.where-find {
+	position: relative;
+	display: flex;
+	max-width: 1312px;
+	margin: 0 auto;
+	padding: 64px 0 52px;
+}
+
+.photo {
+	margin-right: 88px;
+}
+
+.title {
+	margin-bottom: 8px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 56px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.desc {
+	max-width: 560px;
+}
+
+.desc__text {
+	margin-bottom: 54px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+}
