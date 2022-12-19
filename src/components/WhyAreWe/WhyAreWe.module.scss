@@ -1,0 +1,71 @@
+.why-are-we {
+	display: flex;
+	max-width: 1312px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 120px 0;
+}
+
+.description {
+	flex-grow: 1;
+	padding-right: 40px;
+}
+
+.title {
+	margin-bottom: 36px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 56px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.cover {
+	position: relative;
+	width: 752px;
+	height: 448px;
+}
+
+.cover__image {
+	position: relative;
+	z-index: 1;
+}
+
+.mount {
+	position: absolute;
+	width: 752px;
+	height: 448px;
+	top: 5px;
+	left: 0;
+	filter: blur(10px);
+	z-index: 0;
+	opacity: 0.5;
+}
+
+.list {
+}
+
+.list__li {
+	position: relative;
+	display: block;
+	padding-left: 32px;
+	font-size: 16px;
+	line-height: 140%;
+	&:not(:last-child) {
+		margin-bottom: 28px;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 24px;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: url("./../../img/ico/common/Arrow.svg") no-repeat;
+		background-position: center center;
+	}
+}
