@@ -1,6 +1,7 @@
 import CreateTeam from "./components/CreateTeam/CreateTeam";
 import Header from "./components/Header/Header";
 import MainMenu from "./components/MainMenu/MainMenu";
+import ProcessFind from "./components/ProcessFind/ProcessFind";
 import Services from "./components/Services/Services";
 import Technologies from "./components/Technologies/Technologies";
 import WhereFind from "./components/WhereFind/WhereFind";
@@ -16,6 +17,7 @@ function App() {
       <CreateTeam />
       <Technologies />
       <WhereFind />
+      <ProcessFind />
     </div>
   );
 }
