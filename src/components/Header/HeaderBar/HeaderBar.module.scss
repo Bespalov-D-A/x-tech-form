@@ -1,0 +1,58 @@
+@import "./../../../sass/index.scss";
+
+.bar {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+	backdrop-filter: blur(10px);
+	padding-left: 304px;
+	background: rgb(255 255 255 / 0.8);
+}
+
+.desc {
+	margin-right: 231px;
+	font-family: "IBM_Plex_Sans";
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: $gray3;
+}
+
+.list {
+	display: flex;
+	height: 100%;
+}
+
+.list__block {
+	height: 100%;
+	&:first-child {
+		width: 124px;
+		margin-right: 118px;
+		background: url("./../../../img/ico/common/2099.svg") no-repeat;
+		background-position: center center;
+	}
+	&:nth-child(2) {
+		width: 184px;
+		margin-right: 112px;
+		background: url("./../../../img/ico/common/clover.svg") no-repeat;
+		background-position: center center;
+	}
+
+	&:nth-child(3) {
+		width: 191px;
+		margin-right: 102px;
+		background: url("./../../../img/ico/common/basic-chain.svg") no-repeat;
+		background-position: center 45%;
+	}
+	&:nth-child(4) {
+		width: 145px;
+		margin-right: 102px;
+		background: url("./../../../img/ico/common/ctrlgo.svg") no-repeat;
+		background-position: center 60%;
+	}
+}
