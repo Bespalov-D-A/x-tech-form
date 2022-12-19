@@ -1,12 +1,13 @@
 import Header from "./components/Header/Header";
 import MainMenu from "./components/MainMenu/MainMenu";
+import Services from "./components/Services/Services";
 
 function App() {
   return (
     <div>
       <MainMenu />
       <Header />
-      <h1>Hello world</h1>
+      <Services />
     </div>
   );
 }
