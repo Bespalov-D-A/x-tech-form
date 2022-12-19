@@ -1,0 +1,20 @@
+.techno {
+	max-width: 1392px;
+	margin: 0 auto;
+}
+
+.title {
+	max-width: 1312px;
+	margin: 0 auto 58px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.list {
+	display: flex;
+	flex-flow: row wrap;
+}

@@ -1,3 +1,9 @@
+export interface ITechnology {
+  title: string,
+  description: string,
+  photo: any
+}
+
 export interface IEmployee {
   name: string;
   lastName: string;
