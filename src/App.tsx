@@ -1,3 +1,4 @@
+import CreateTeam from "./components/CreateTeam/CreateTeam";
 import Header from "./components/Header/Header";
 import MainMenu from "./components/MainMenu/MainMenu";
 import Services from "./components/Services/Services";
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Services />
       <WhyAreWe />
+      <CreateTeam />
     </div>
   );
 }
