@@ -1,0 +1,21 @@
+@import './../../sass/index.scss';
+
+.services {
+	max-width: 1312px;
+	margin: 0 auto;
+}
+
+.title {
+	margin-bottom: 40px;
+	font-family: "Commissioner";
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-feature-settings: "tnum" on, "lnum" on;
+	color: $black;
+	text-shadow: -3px -3px 6px #FFFFFF, 3px 3px 6px rgba(49, 69, 106, 0.3);
+}
+
+.list {
+	display: flex;
+}
