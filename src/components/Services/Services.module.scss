@@ -1,8 +1,9 @@
-@import './../../sass/index.scss';
+@import "./../../sass/index.scss";
 
 .services {
 	max-width: 1312px;
 	margin: 0 auto;
+	padding-bottom: 120px;
 }
 
 .title {
@@ -13,7 +14,7 @@
 	text-transform: uppercase;
 	font-feature-settings: "tnum" on, "lnum" on;
 	color: $black;
-	text-shadow: -3px -3px 6px #FFFFFF, 3px 3px 6px rgba(49, 69, 106, 0.3);
+	text-shadow: -3px -3px 6px #ffffff, 3px 3px 6px rgba(49, 69, 106, 0.3);
 }
 
 .list {
