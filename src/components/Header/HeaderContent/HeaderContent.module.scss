@@ -1,0 +1,55 @@
+@import "./../../../sass/index.scss";
+
+.header-content {
+	display: flex;
+	padding-right: 830px;
+}
+
+.content {
+	position: relative;
+	max-width: 630px;
+	width: 100%;
+}
+
+.wrap {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 120px;
+}
+
+.wrap__title {
+	margin-bottom: 16px;
+	font-family: "Commissioner";
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	font-feature-settings: "tnum" on, "lnum" on;
+	text-transform: uppercase;
+	color: $black;
+}
+
+.wrap__desc {
+	margin-bottom: 96px;
+	@include font-size($lg-text);
+	letter-spacing: 0.04em;
+	color: $gray4;
+}
+
+.img {
+	position: relative;
+	width: 1px;
+	height: 600px;
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 830px;
+		height: 600px;
+		top: -53px;
+		left: 0;
+		bottom: 0;
+		right: 0;
+
+		background-image: url("./../../../img/x-header.png");
+	}
+}
