@@ -68,7 +68,7 @@ const CreateTeam: FC = () => {
         <div className={s.list}>{remapEmployees(employees)}</div>
         <div className={s.more}>
           <p className={s['more__text']}>...and <b>4368</b> more developers</p>
-          <Btn title="Create team" pRight={70} pLeft={70} />
+          <Btn arrowIn={true} title="Create team" pRight={70} pLeft={70} />
         </div>
       </div>
     </div>
