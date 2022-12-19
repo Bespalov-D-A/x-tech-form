@@ -5,11 +5,12 @@ interface BtnI {
 	title: string;
 	pLeft: number;
 	pRight: number;
-	primary: boolean;
+	primary?: boolean;
+	arrow?: boolean;
 }
 
 const Btn: FC<BtnI> = (props) => {
-	const { title, pLeft, pRight, primary } = props;
+	const { title, pLeft, pRight, primary, arrow } = props;
 
 	const style = {
 		paddingLeft: pLeft,
@@ -17,7 +18,8 @@ const Btn: FC<BtnI> = (props) => {
 	};
 
 	return (
-		<div className={s.btn + " " + (primary ? s.primary : "")} style={style}>
+		<div className={s.btn + " " + (primary || arrow ? s.primary : "") + ' '} style={style}>
+			{arrow && <div className={s.arrow}/>}
 			{title}
 		</div>
 	);
