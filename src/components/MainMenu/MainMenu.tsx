@@ -28,7 +28,7 @@ const MainMenu: FC = () => {
             <NavLink to="/command-constructor">Конструктор команд</NavLink>
           </li>
         </ul>
-        <Btn arrow={true} title="Узнать условия" pRight={50} pLeft={50} primary={false} />
+        <Btn arrow={false} title="Узнать условия" pRight={50} pLeft={50} primary={false} />
       </div>
     </div>
   );
