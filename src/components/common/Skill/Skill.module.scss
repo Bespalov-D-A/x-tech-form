@@ -1,0 +1,18 @@
+@import "./../../../sass/index.scss";
+
+.skill {
+	height: 24px;
+	padding: 2px 8px;
+	margin-bottom: 8px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	border-radius: 8px;
+	text-transform: uppercase;
+	background: $gray5;
+}
+
+.list {
+	display: flex;
+	flex-flow: row wrap;
+}
