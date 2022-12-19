@@ -1,0 +1,49 @@
+@import "./../../sass/colors.scss";
+
+.process-find {
+	max-width: 1312px;
+	margin: 0 auto;
+	padding: 155px 0 124px;
+}
+
+.title {
+	margin-bottom: 55px;
+}
+
+.list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.item {
+	width: 272px;
+}
+
+.arrow {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 12px;
+	left: -50px;
+	filter: sepia(51%);
+	opacity: 0.2;
+}
+
+.num {
+	margin-bottom: 16px;
+	font-family: "Commissioner";
+	font-style: normal;
+	line-height: 140%;
+	display: flex;
+	letter-spacing: 0.04em;
+	font-feature-settings: "tnum" on, "lnum" on;
+	color: $blue1;
+}
+
+.desc {
+	position: relative;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+}
