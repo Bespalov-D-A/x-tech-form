@@ -16,7 +16,7 @@ const HeaderContent: FC<HeaderContentI> = () => {
           <p className={s["wrap__desc"]}>
             Соберем команду для проекта за 10 дней
           </p>
-          <Btn arrow={true} title={"Узнать условия"} pLeft={34} pRight={16} />
+          <Btn bgcl={'blue'} arrow={true} title={"Узнать условия"} pLeft={34} pRight={16} />
         </div>
       </div>
       <div className={s.img}></div>
