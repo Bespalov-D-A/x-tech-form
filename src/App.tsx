@@ -1,3 +1,4 @@
+import Community from "./components/Community/Community";
 import CreateTeam from "./components/CreateTeam/CreateTeam";
 import Header from "./components/Header/Header";
 import MainMenu from "./components/MainMenu/MainMenu";
@@ -18,6 +19,7 @@ function App() {
       <Technologies />
       <WhereFind />
       <ProcessFind />
+      <Community />
     </div>
   );
 }

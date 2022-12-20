@@ -1,0 +1,27 @@
+.community {
+	display: flex;
+	max-width: 1312px;
+	margin: 0 auto;
+	padding: 130px 0 40px;
+}
+
+.desc-block {
+	padding-top: 16px;
+}
+
+.title {
+	margin-bottom: 24px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.desc {
+	padding-right: 16px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+}
