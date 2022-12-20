@@ -1,0 +1,103 @@
+@import "./../../sass/index.scss";
+
+.wrapper {
+	background-color: #4d5062;
+}
+
+.feedback-wrap {
+	position: relative;
+	max-width: 1920px;
+	margin: 0 auto;
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: url("./../../img/other/map.jpg") no-repeat;
+		background-position: left center;
+		z-index: 1;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: #4d5062;
+		z-index: 0;
+	}
+}
+
+.feedback {
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-width: 1392px;
+	height: 642px;
+	margin: 0 auto;
+	padding: 100px 0;
+	z-index: 2;
+}
+
+.title {
+	margin-bottom: 32px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-feature-settings: "tnum" on, "lnum" on;
+	color: #fff;
+}
+
+.info {
+	max-width: 335px;
+}
+
+.where-title {
+	margin-bottom: 11px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.address {
+	margin-bottom: 37px;
+}
+
+.phone {
+	margin-bottom: 7px;
+}
+
+.mail {
+	margin-bottom: 50px;
+}
+
+.address,
+.phone,
+.mail {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.04em;
+	color: #fff;
+}
+
+.social__title {
+	margin-bottom: 8px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #fff;
+}

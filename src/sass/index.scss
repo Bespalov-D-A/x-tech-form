@@ -13,3 +13,13 @@ body {
 b {
 	font-weight: 700;
 }
+
+a {
+	color: #fff;
+	&:link {
+		color: #fff;
+	}
+	&:visited {
+		color: #fff;
+	}
+}
