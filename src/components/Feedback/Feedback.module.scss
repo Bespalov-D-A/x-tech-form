@@ -33,6 +33,9 @@
 
 .feedback {
 	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
 	max-width: 1392px;
 	height: 642px;
 	margin: 0 auto;

@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Social from "../common/Social/Social";
+import FeedbackForm from "../FeedbackForm/FeedbackForm";
 import s from "./Feedback.module.scss";
 
 const Feedback: FC = () => {
@@ -16,10 +17,12 @@ const Feedback: FC = () => {
             <p className={s.phone}>+796543210</p>
             <p className={s.mail}>office@stl.im</p>
             <div className={s.social}>
-                <h3 className={s['social__title']}>social</h3>
+              <h3 className={s["social__title"]}>social</h3>
               <Social />
             </div>
           </div>
+
+        <FeedbackForm />
         </div>
       </div>
     </div>
