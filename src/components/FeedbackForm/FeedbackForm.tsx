@@ -39,7 +39,13 @@ const FeedbackForm: FC = () => {
           </div>
           <div className={s.attach}>attach file</div>
         </div>
-        <Btn title="Отправить" pRight={40} pLeft={40} arrow={true} />
+        <Btn
+          bgcl="white"
+          title="Отправить"
+          pRight={40}
+          pLeft={40}
+          arrow={true}
+        />
       </form>
     </div>
   );
