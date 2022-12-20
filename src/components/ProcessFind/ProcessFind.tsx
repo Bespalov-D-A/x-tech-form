@@ -16,9 +16,11 @@ const ProcessFind: FC = () => {
       <div className={s.list}>
         {data.map((item, index) => (
           <div key={index} className={s.item}>
-            <img src={arrow} alt="" className={s.arrow} />
             <h1 className={s.num}>{index}</h1>
-            <p className={s.desc}>{item.msg}</p>
+            <p className={s.desc}>
+              <img src={arrow} alt="" className={s.arrow} />
+              {item.msg}
+            </p>
           </div>
         ))}
       </div>
