@@ -1,0 +1,22 @@
+@import "./../../sass/index.scss";
+
+.event {
+	max-width: 1392px;
+	margin: 0 auto 154px;
+	padding: 40px 40px 68px;
+	background: $cream;
+}
+
+.list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title {
+	margin-bottom: 25px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}

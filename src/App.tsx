@@ -1,5 +1,6 @@
 import Community from "./components/Community/Community";
 import CreateTeam from "./components/CreateTeam/CreateTeam";
+import EventComp from "./components/Event/Event";
 import Header from "./components/Header/Header";
 import MainMenu from "./components/MainMenu/MainMenu";
 import ProcessFind from "./components/ProcessFind/ProcessFind";
@@ -20,6 +21,7 @@ function App() {
       <WhereFind />
       <ProcessFind />
       <Community />
+      <EventComp />
     </div>
   );
 }
