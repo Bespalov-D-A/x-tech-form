@@ -73,6 +73,10 @@
 	margin-bottom: 7px;
 }
 
+.mail {
+	margin-bottom: 50px;
+}
+
 .address,
 .phone,
 .mail {
@@ -82,5 +86,15 @@
 	display: flex;
 	align-items: center;
 	letter-spacing: 0.04em;
+	color: #fff;
+}
+
+.social__title {
+	margin-bottom: 8px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
 	color: #fff;
 }
