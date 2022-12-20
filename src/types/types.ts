@@ -1,3 +1,9 @@
+export interface EventI {
+  title: string,
+    desc: string,
+    photo: string
+}
+
 export interface ITechnology {
   title: string,
   description: string,

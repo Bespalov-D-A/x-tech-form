@@ -1,0 +1,19 @@
+import { FC } from "react";
+import { EventI } from "../../../types/types";
+import s from "./EventItem.module.scss";
+
+const EventItem: FC<EventI> = (props) => {
+	const { title, desc, photo } = props;
+
+	return (
+		<div className={s.event}>
+			<img src={photo} className={s.mount} alt="" />
+			<img src={photo} className={s.photo} alt="" />
+			<h3 className={s.title}>{title}</h3>
+			<p className={s.desc}>{desc}</p>
+			<span>Читать далее</span>
+		</div>
+	);
+};
+
+export default EventItem;

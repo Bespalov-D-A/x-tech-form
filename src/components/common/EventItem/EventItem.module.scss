@@ -1,0 +1,37 @@
+.event {
+	position: relative;
+	max-width: 416px;
+}
+
+.photo {
+	position: relative;
+	margin-bottom: 24px;
+	z-index: 1;
+}
+
+.mount {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 416px;
+	height: 176px;
+	filter: blur(10px);
+	opacity: 0.8;
+	z-index: 0;
+}
+
+.title {
+	margin-bottom: 8px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.desc {
+	margin-bottom: 16px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+}
