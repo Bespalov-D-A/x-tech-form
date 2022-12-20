@@ -1,0 +1,108 @@
+@import "./../../sass/index.scss";
+
+.form-wrap {
+	position: relative;
+	width: 640px;
+	z-index: 10;
+}
+
+.form {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+
+.input-wrap {
+	position: relative;
+	max-width: 306px;
+	width: 100%;
+	height: 48px;
+	margin-bottom: 32px;
+	overflow: hidden;
+	background: $gray5;
+	&.text {
+		max-width: 100%;
+		width: 100%;
+		height: 144px;
+		flex-grow: 1;
+	}
+}
+
+.inp {
+	position: absolute;
+	padding-left: 16px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 0;
+	outline: none;
+	border: solid 1px $gray4;
+	background: transparent;
+	z-index: 3;
+}
+
+textarea.inp {
+	padding-top: 16px;
+}
+
+.inp-placeholder {
+	position: absolute;
+	display: flex;
+	height: 48px;
+	align-items: center;
+	padding-left: 16px;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	max-width: 640px;
+	width: 100%;
+}
+
+.license {
+	display: flex;
+	max-width: 390px;
+	margin-bottom: 34px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 140%;
+	color: #fff;
+}
+
+.checkb {
+	width: 14px;
+	margin-right: 14px;
+}
+
+.license-text {
+	opacity: 0.7;
+}
+
+.attach {
+	position: relative;
+	width: 152px;
+	height: 32px;
+	padding-left: 20px;
+	line-height: 32px;
+	font-weight: 700;
+	font-size: 12px;
+	text-align: center;
+	background: $gray3;
+	&:after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 16px;
+		height: 16px;
+		top: 8px;
+		left: 26px;
+		background: url("./../../img/ico/common/attach.svg") no-repeat;
+		background-size: 16px;
+	}
+}
