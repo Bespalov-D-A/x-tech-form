@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Social from "../common/Social/Social";
 import s from "./Feedback.module.scss";
 
 const Feedback: FC = () => {
@@ -12,6 +13,7 @@ const Feedback: FC = () => {
             <p className={s.address}>236010, РФ, г. Калининград, ул. Генерала озерова 17Б</p>
             <p className={s.phone}>+796543210</p>
             <p className={s.mail}>office@stl.im</p>
+            <Social />
           </div>
         </div>
       </div>
