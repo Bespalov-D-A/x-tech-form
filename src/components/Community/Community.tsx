@@ -1,5 +1,5 @@
 import { FC } from "react";
-import photo from "./../../img/photo/mainPage/video.jpg";
+import photo from "./../../img/photo/mainPage/video.png";
 import s from "./Community.module.scss";
 
 const text = () => {
@@ -27,7 +27,12 @@ const Community: FC = () => {
         <h1 className={s.title}>Сообщество</h1>
         <p className={s.desc}>{text()}</p>
       </div>
-      <img src={photo} alt="" />
+      <div className={s["video-block"]}>
+        <div className={s['video-wrap']}>
+          <img src={photo} alt="" className={s.mount} />
+          <img src={photo} alt="" className={s.video} />
+        </div>
+      </div>
     </div>
   );
 };
