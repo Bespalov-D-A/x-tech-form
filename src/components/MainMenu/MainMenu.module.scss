@@ -1,4 +1,4 @@
-@import './../../sass/colors.scss';
+@import "./../../sass/index.scss";
 
 .menu-wrap {
 	display: flex;
@@ -8,10 +8,29 @@
 	height: 80px;
 	padding: 0 80px;
 	border-bottom: solid 1px $gray5;
+	@include media("within", "lg") {
+		height: 88px;
+		padding: 0 40px;
+	}
 }
 
-
+.logo {
+	display: flex;
+	@include media("within", "lg") {
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-flow: column wrap;
+		height: 100%;
+		padding: 12px 0 8px;
+	}
+}
 
 .right {
 	display: flex;
+}
+
+.icon {
+	@include media("within", "lg") {
+		margin-bottom: 7px;
+	}
 }

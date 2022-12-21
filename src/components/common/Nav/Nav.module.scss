@@ -27,10 +27,16 @@
 .menu {
 	display: flex;
 	margin-right: 80px;
+	@include media('within' , 'lg') {
+		margin-right: 0;
+	}
 }
 
 .menu-block {
 	margin-right: 60px;
+	@include media('within', 'lg') {
+		margin-right: 40px;
+	}
 	&:last-child {
 		margin-right: 0;
 	}
