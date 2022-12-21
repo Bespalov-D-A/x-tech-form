@@ -9,10 +9,10 @@ const MainMenu: FC = () => {
   return (
     <div className={s["menu-wrap"]}>
       <div className={s.logo}>
-        <img src={logo} alt="" />
+        <img src={logo} alt="" className={s.icon}/>
+        <Nav />
       </div>
       <div className={s.right}>
-        <Nav />
         <Btn
           arrow={false}
           title="Узнать условия"
