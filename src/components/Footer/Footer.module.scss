@@ -1,0 +1,62 @@
+.footer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-width: 1392px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+.right-side {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 400px;
+}
+
+.copyright {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	opacity: 0.8;
+}
+
+.left-side {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.navigation {
+	width: 224px;
+	text-align: left;
+}
+
+.social {
+	width: 200px;
+	margin-right: 90px;
+}
+
+.info {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	max-width: 304px;
+	max-height: 200px;
+	p {
+		line-height: 140%;
+		opacity: 0.8;
+	}
+}
+
+.title {
+	margin-bottom: 8px;
+	font-family: 'IBM_Plex_Sans';
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 32px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	opacity: 0.8;
+}
