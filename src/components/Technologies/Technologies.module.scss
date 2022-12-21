@@ -1,6 +1,11 @@
+@import "./../../sass/index.scss";
+
 .techno {
 	max-width: 1392px;
 	margin: 0 auto;
+	@include media("within", "lg") {
+		padding-right: 40px;
+	}
 }
 
 .title {
@@ -12,9 +17,13 @@
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-feature-settings: "tnum" on, "lnum" on;
+	@include media("within", "lg") {
+		padding: 0 40px;
+	}
 }
 
 .list {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: space-between;
 }
