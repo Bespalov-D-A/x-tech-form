@@ -15,7 +15,7 @@ const ServiceItem: FC<ServiceItemI> = (props) => {
 		<div className={s["service-item"]}>
 			<img src={image} className={s.mount} alt="" />
 			<div className={s.cover}>
-				<img src={image} alt="" />
+				<img src={image} alt="" className={s.photo} />
 			</div>
 			<p className={s.title}>{title}</p>
 			<p className={s.description}>{description}</p>
