@@ -3,13 +3,27 @@
 .employee {
 	display: flex;
 	flex-flow: column wrap;
+	flex: 1 1;
 	max-width: 304px;
 	overflow: hidden;
 	border: solid 1px $gray5;
+	&:not(:last-child) {
+		margin-right: 32px;
+	}
+
+	@include media("within", "lg") {
+		&:not(:last-child) {
+			margin-right: 16px;
+		}
+	}
 	&:hover {
 		.mount {
 			width: 664px;
 			left: -150px;
+			@include media("within", "lg") {
+				width: 500px;
+				top: -150px;
+			}
 		}
 	}
 }
@@ -20,6 +34,9 @@
 	height: 180px;
 	padding-top: 16px;
 	overflow: hidden;
+	@include media("within", "lg") {
+		width: 100%;
+	}
 	&:after {
 		content: "";
 		position: absolute;
@@ -38,9 +55,13 @@
 	top: -120px;
 	left: -20px;
 	width: 464px;
-	filter: blur(10px);
+	filter: blur(8px);
 	z-index: 0;
 	transition: all ease-in-out 0.2s;
+	@include media("within", "lg") {
+		top: -60px;
+		width: 369px;
+	}
 }
 
 .cover {
@@ -49,10 +70,15 @@
 	width: 120px;
 	height: 120px;
 	margin: 0 auto 9px;
-	border-radius: 50%;
+	border-radius: 300px;
+	overflow: hidden;
 	box-shadow: 0px 2px 4px rgba(55, 59, 79, 0.05),
 		0px 3px 8px rgba(55, 59, 79, 0.08), 0px 4px 16px rgba(55, 59, 79, 0.2);
 	z-index: 1;
+}
+
+.cover__image {
+	width: 140px;
 }
 
 .name {
@@ -71,6 +97,9 @@
 
 .spec {
 	padding: 0 24px 16px;
+	@include media("within", "lg") {
+		padding: 0 15px 16px;
+	}
 }
 
 .title {
@@ -78,4 +107,8 @@
 	align-items: center;
 	height: 60px;
 	border-bottom: solid 1px $gray5;
+	letter-spacing: 0.04em;
+	@include media("within", "lg") {
+		font-size: 14px;
+	}
 }
