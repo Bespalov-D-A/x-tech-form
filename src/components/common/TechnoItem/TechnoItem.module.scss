@@ -1,11 +1,20 @@
+@import './../../../sass/index.scss';
+
 .tech {
 	display: flex;
 	flex-flow: row wrap;
-	width: 672px;
+	max-width: 672px;
+	width: 100%;
 	min-height: 193px;
+	@include media("within", "lg") {
+		min-width: 464px;
+		width: auto;
+		flex: 1 1;
+	}
 }
 
 .title {
+	
 }
 
 .cover {
@@ -29,6 +38,9 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 140%;
+	@include media("within", "lg") {
+		font-size: 14px;
+	}
 }
 
 .title {
@@ -36,8 +48,6 @@
 	font-family: "Commissioner";
 	font-style: normal;
 	font-weight: 700;
-	font-size: 24px;
-	line-height: 32px;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 }
