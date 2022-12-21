@@ -1,3 +1,5 @@
+@import './../../sass/index.scss';
+
 .header {
 	position: relative;
 	display: flex;
@@ -6,4 +8,7 @@
 	padding-left: 304px;
 	margin-bottom: 120px;
 	overflow: hidden;
+	@include media('within', 'lg') {
+		padding-left: 40px;
+	}
 }
