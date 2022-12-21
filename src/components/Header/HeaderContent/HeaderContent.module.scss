@@ -2,7 +2,12 @@
 
 .header-content {
 	display: flex;
+	height: 600px;
 	padding-right: 830px;
+	@include media("within", "lg") {
+		height: 504px;
+		padding-right: 0;
+	}
 }
 
 .content {
@@ -33,6 +38,9 @@
 	@include font-size($lg-text);
 	letter-spacing: 0.04em;
 	color: $gray4;
+	@include media("within", "lg") {
+		margin-bottom: 56px;
+	}
 }
 
 .img {
@@ -49,7 +57,11 @@
 		left: 0;
 		bottom: 0;
 		right: 0;
-
 		background-image: url("./../../../img/x-header.png");
+	}
+	@include media("within", "lg") {
+		position: absolute;
+		left: 360px;
+		top: 0;
 	}
 }

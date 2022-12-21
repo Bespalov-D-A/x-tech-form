@@ -9,7 +9,7 @@ const MainMenu: FC = () => {
   return (
     <div className={s["menu-wrap"]}>
       <div className={s.logo}>
-        <img src={logo} alt="" className={s.icon}/>
+        <img src={logo} alt="" className={s.icon} />
         <Nav />
       </div>
       <div className={s.right}>
