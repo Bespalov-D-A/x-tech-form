@@ -1,13 +1,21 @@
-@import "./../../sass/colors.scss";
+@import "./../../sass/index.scss";
 
 .process-find {
 	max-width: 1312px;
 	margin: 0 auto;
 	padding: 155px 0 124px;
+	@include media("within", "lg") {
+		padding: 80px 40px;
+	}
 }
 
 .title {
 	margin-bottom: 55px;
+	font-family: "Commissioner";
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	font-feature-settings: "tnum" on, "lnum" on;
 }
 
 .list {
@@ -16,7 +24,10 @@
 }
 
 .item {
-	width: 272px;
+	max-width: 272px;
+	@include media("within", "lg") {
+		max-width: 192px;
+	}
 }
 
 .arrow {
@@ -33,11 +44,15 @@
 	margin-bottom: 16px;
 	font-family: "Commissioner";
 	font-style: normal;
+	font-size: 80px;
 	line-height: 140%;
 	display: flex;
 	letter-spacing: 0.04em;
 	font-feature-settings: "tnum" on, "lnum" on;
 	color: $blue1;
+	@include media("within", "lg") {
+		font-size: 62px;
+	}
 }
 
 .desc {
