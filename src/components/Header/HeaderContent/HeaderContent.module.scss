@@ -14,6 +14,9 @@
 	position: relative;
 	max-width: 630px;
 	width: 100%;
+	@media screen and (max-width: 1919px) {
+		max-width: 1320px;
+	}
 }
 
 .wrap {
@@ -35,6 +38,9 @@
 
 .wrap__desc {
 	margin-bottom: 96px;
+	@media screen and (max-width: 1448px) {
+		margin-bottom: 60px;
+	}
 	@include font-size($lg-text);
 	letter-spacing: 0.04em;
 	color: $gray4;
@@ -58,10 +64,14 @@
 		bottom: 0;
 		right: 0;
 		background-image: url("./../../../img/x-header.png");
+	@include media("within", "lg") {
+		background-size: 672px;
+		background-repeat: no-repeat;
+	}
 	}
 	@include media("within", "lg") {
 		position: absolute;
-		left: 360px;
+		right: 672px;
 		top: 0;
 	}
 }

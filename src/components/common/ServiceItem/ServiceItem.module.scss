@@ -7,6 +7,8 @@
 	margin-right: 32px;
 	@include media("within", "lg") {
 		max-width: 304px;
+
+		margin-right: 16px;
 	}
 	&:last-child {
 		margin-right: 0;
