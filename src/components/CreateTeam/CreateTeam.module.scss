@@ -1,8 +1,13 @@
+@import "./../../sass/index.scss";
+
 .create-team {
 	max-width: 1392px;
 	width: 100%;
 	margin: 0 auto 100px;
 	padding: 120px 0;
+	@include media("within", "lg") {
+		padding: 40px 24px 32px;
+	}
 }
 
 .header {
@@ -16,11 +21,12 @@
 	font-family: "Commissioner";
 	font-style: normal;
 	font-weight: 700;
-	font-size: 48px;
-	line-height: 56px;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-feature-settings: "tnum" on, "lnum" on;
+	@include media("within", "lg") {
+		margin-bottom: 12px;
+	}
 }
 
 .description {
@@ -28,17 +34,29 @@
 	margin-bottom: 34px;
 	font-size: 16px;
 	line-height: 140%;
+	@include media("within", "lg") {
+		max-width: 680px;
+		margin-bottom: 24px;
+		font-size: 14px;
+	}
 }
 
 .info {
 	padding: 40px;
-	background: #F8F9FA;
+	background: #f8f9fa;
+	@include media("within", "lg") {
+		padding: 24px;
+	}
 }
+
 .list {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: space-between;
 	margin-bottom: 60px;
+	@include media("within", "lg") {
+	margin-bottom: 40px;
+	}
 }
 
 .more {
@@ -47,4 +65,7 @@
 
 .more__text {
 	margin-bottom: 60px;
+	@include media("within", "lg") {
+	margin-bottom: 40px;
+	}
 }

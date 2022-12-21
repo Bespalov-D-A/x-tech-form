@@ -18,7 +18,9 @@ const EmployeeItem: FC<EmployeeItemI> = (props) => {
 		<div className={s.employee}>
 			<div className={s["cover-wrap"]}>
 				<img src={photo} alt="" className={s.mount} />
-				<img src={photo} alt="" className={s.cover} />
+				<div className={s.cover}>
+				<img src={photo} alt="" className={s['cover__image']} />
+				</div>
 				<span className={s.name}>
 					{name + " " + lastName.slice(0, 1) + "."}
 				</span>
