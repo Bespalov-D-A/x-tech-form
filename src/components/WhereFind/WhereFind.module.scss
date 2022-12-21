@@ -38,6 +38,9 @@
 
 .photo {
 	margin-right: 88px;
+	@include media("within", "lg") {
+		display: none;
+	}
 }
 
 .title {
@@ -45,15 +48,18 @@
 	font-family: "Commissioner";
 	font-style: normal;
 	font-weight: 700;
-	font-size: 48px;
-	line-height: 56px;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-feature-settings: "tnum" on, "lnum" on;
 }
 
 .desc {
+	position: relative;
+	z-index: 20;
 	max-width: 560px;
+	@include media("within", "lg") {
+		margin-left: 40px;
+	}
 }
 
 .desc__text {
@@ -61,4 +67,7 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 140%;
+	@include media("within", "lg") {
+		font-size: 14px;
+	}
 }
