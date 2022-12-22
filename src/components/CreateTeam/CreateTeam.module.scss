@@ -8,12 +8,18 @@
 	@include media("within", "lg") {
 		padding: 40px 24px 32px;
 	}
+	@include media("within", "md") {
+		padding: 100px 8px;
+	}
 }
 
 .header {
 	max-width: 1312px;
 	width: 100%;
 	margin: 0 auto;
+	@include media("within", "md") {
+		padding: 0 20px;
+	}
 }
 
 .title {
@@ -25,6 +31,9 @@
 	text-transform: uppercase;
 	font-feature-settings: "tnum" on, "lnum" on;
 	@include media("within", "lg") {
+		margin-bottom: 12px;
+	}
+	@include media("within", "md") {
 		margin-bottom: 12px;
 	}
 }
@@ -39,13 +48,22 @@
 		margin-bottom: 24px;
 		font-size: 14px;
 	}
+
+	@include media("within", "md") {
+		max-width: unset;
+		margin-bottom: 18px;
+		font-size: 14px;
+	}
 }
 
 .info {
 	padding: 40px;
-	background: #f8f9fa;
+	background: $cream;
 	@include media("within", "lg") {
 		padding: 24px;
+	}
+	@include media("within", "md") {
+		padding: 20px 20px 36px;
 	}
 }
 
@@ -55,7 +73,10 @@
 	justify-content: space-between;
 	margin-bottom: 60px;
 	@include media("within", "lg") {
-	margin-bottom: 40px;
+		margin-bottom: 40px;
+	}
+	@include media("within", "md") {
+		margin-bottom: 24px;
 	}
 }
 
@@ -66,6 +87,9 @@
 .more__text {
 	margin-bottom: 60px;
 	@include media("within", "lg") {
-	margin-bottom: 40px;
+		margin-bottom: 40px;
+	}
+	@include media("within", "md") {
+		margin-bottom: 32px;
 	}
 }
