@@ -15,7 +15,7 @@ const EventItem: FC<EventI> = (props) => {
 			</div>
 			<h3 className={s.title}>{title}</h3>
 			<p className={s.desc}>{desc}</p>
-			<span>Читать далее</span>
+			<a href="#" className={s.lnk}>Читать далее</a>
 		</div>
 	);
 };

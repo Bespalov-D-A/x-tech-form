@@ -25,6 +25,9 @@
 	font-size: 12px;
 	line-height: 20px;
 	opacity: 0.8;
+	@include media("within", "lg") {
+	margin-bottom: 16px;
+	}
 }
 
 .left-side {
@@ -35,9 +38,11 @@
 
 .navigation {
 	max-width: 224px;
-	height: 171px;
 	width: 100%;
 	text-align: left;
+	.title {
+		margin-bottom: 11px;
+	}
 	@include media("within", "lg") {
 		font-size: 14px;
 		max-width: 184px;
