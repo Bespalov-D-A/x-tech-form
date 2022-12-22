@@ -9,6 +9,9 @@
 	@include media("within", "lg") {
 		padding: 0 40px 86px;
 	}
+	@include media('within', 'md') {
+		padding: 0 28px 86px;
+	}
 }
 
 .title {
@@ -24,4 +27,7 @@
 
 .list {
 	display: flex;
+	@include media('within', 'md') {
+		flex-flow: column wrap;
+	}
 }

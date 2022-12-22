@@ -19,6 +19,9 @@
 		justify-content: space-between;
 		padding-left: 40px;
 	}
+	@include media("within", "md") {
+		padding-left: 28px;
+	}
 }
 
 .desc {
@@ -96,9 +99,11 @@
 		}
 	}
 	@include media("within", "md") {
-		&:not(:last-child),
-		&:last-child {
+		&:not(:last-child) {
 			margin-right: 32px;
+		}
+		&:last-child {
+			margin-right: 28px;
 		}
 	}
 }
