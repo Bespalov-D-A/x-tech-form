@@ -1,4 +1,4 @@
-@import './../../sass/index.scss';
+@import "./../../sass/index.scss";
 
 .header {
 	position: relative;
@@ -11,7 +11,12 @@
 	@media screen and (max-width: 1919px) {
 		padding-left: 40px;
 	}
-	@include media('within', 'lg') {
+	@include media("within", "lg") {
 		padding-left: 40px;
+	}
+
+	@include media("within", "md") {
+		padding-left: 27px;
+		margin-bottom: 56px;
 	}
 }

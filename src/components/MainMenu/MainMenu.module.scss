@@ -8,9 +8,22 @@
 	height: 80px;
 	padding: 0 80px;
 	border-bottom: solid 1px $gray5;
+	transition: all ease-in-out 0.3s;
+	z-index: 40;
 	@include media("within", "lg") {
 		height: 88px;
 		padding: 0 40px;
+	}
+	@include media("max", "md") {
+		justify-content: center;
+		align-items: unset;
+		position: fixed;
+		max-width: 380px;
+		height: 100%;
+		top: 48px;
+		left: -380px;
+		padding: 80px 0 0;
+		background: $black;
 	}
 }
 
@@ -27,10 +40,17 @@
 
 .right {
 	display: flex;
+	@include media("max", "md") {
+		align-items: flex-end;
+		padding-bottom: 80px;
+	}
 }
 
 .icon {
 	@include media("within", "lg") {
 		margin-bottom: 7px;
+	}
+	@include media("max", "md") {
+		display: none;
 	}
 }

@@ -16,9 +16,11 @@ const ServiceItem: FC<ServiceItemI> = (props) => {
 				<img src={image} className={s.mount} alt="" />
 				<img src={image} alt="" className={s.photo} />
 			</div>
-			<p className={s.title}>{title}</p>
-			<p className={s.description}>{description}</p>
-			<BtnLink title="Узнать подробнее" />
+			<div className={s.content}>
+				<p className={s.title}>{title}</p>
+				<p className={s.description}>{description}</p>
+				<BtnLink title="Узнать подробнее" />
+			</div>
 		</div>
 	);
 };

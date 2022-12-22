@@ -5,6 +5,10 @@
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
+	@include media('max', 'md') {
+	flex-flow: column;
+	align-items: flex-start;
+	}
 	&.column {
 		flex-flow: column wrap;
 		align-items: flex-start;

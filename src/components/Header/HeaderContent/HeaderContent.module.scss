@@ -8,6 +8,10 @@
 		height: 504px;
 		padding-right: 0;
 	}
+	@include media("max", "md") {
+		height: 507px;
+		padding-right: 380px;
+	}
 }
 
 .content {
@@ -24,6 +28,9 @@
 	left: 0;
 	bottom: 0;
 	top: 120px;
+	@include media("within", "md") {
+		top: 56px;
+	}
 }
 
 .wrap__title {
@@ -34,6 +41,9 @@
 	font-feature-settings: "tnum" on, "lnum" on;
 	text-transform: uppercase;
 	color: $black;
+	@include media("within", "md") {
+		text-shadow: -3px -3px 6px #ffffff, 3px 3px 6px rgba(49, 69, 106, 0.3);
+	}
 }
 
 .wrap__desc {
@@ -64,14 +74,29 @@
 		bottom: 0;
 		right: 0;
 		background-image: url("./../../../img/x-header.png");
-	@include media("within", "lg") {
-		background-size: 672px;
-		background-repeat: no-repeat;
-	}
+		@include media("within", "lg") {
+			background-size: 672px;
+			background-repeat: no-repeat;
+		}
+
+		@include media("within", "md") {
+			top: -40px;
+			left: -80px;
+			background-size: 617px;
+			background-repeat: no-repeat;
+		}
 	}
 	@include media("within", "lg") {
 		position: absolute;
 		right: 672px;
 		top: 0;
+	}
+}
+
+.btn-wrap {
+	@include media("within", "md") {
+		position: absolute;
+		bottom: 120px;
+		left: 0;
 	}
 }

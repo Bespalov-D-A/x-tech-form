@@ -17,8 +17,14 @@
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-feature-settings: "tnum" on, "lnum" on;
+	opacity: 0.9;
 	@include media("within", "lg") {
 		padding: 0 40px;
+	}
+
+	@include media("within", "md") {
+		padding: 0 28px;
+		margin-bottom: 12px;
 	}
 }
 
