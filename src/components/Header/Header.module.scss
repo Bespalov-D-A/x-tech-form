@@ -8,6 +8,9 @@
 	padding-left: 304px;
 	margin-bottom: 120px;
 	overflow: hidden;
+	@media screen and (max-width: 1919px) {
+		padding-left: 40px;
+	}
 	@include media('within', 'lg') {
 		padding-left: 40px;
 	}

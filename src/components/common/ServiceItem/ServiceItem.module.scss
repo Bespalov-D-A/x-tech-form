@@ -5,18 +5,12 @@
 	max-width: 416px;
 	width: 100%;
 	margin-right: 32px;
+	@include media("within", "lg") {
+		margin-right: 16px;
+	}
 	&:last-child {
 		margin-right: 0;
 	}
-}
-
-.mount {
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	filter: blur(10px);
-	z-index: 0;
-	opacity: 0.6;
 }
 
 .cover {
@@ -25,10 +19,30 @@
 	z-index: 1;
 }
 
+.mount {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 100%;
+	filter: blur(10px);
+	z-index: 0;
+	opacity: 0.6;
+	@include media("within", "lg") {
+	}
+}
+
+.photo {
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	@include media("within", "lg") {
+	}
+}
+
 .title {
 	margin-bottom: 8px;
 	@include font-size($lg-text);
-	font-family: 'Commissioner';
+	font-family: "Commissioner";
 	font-weight: 700;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;

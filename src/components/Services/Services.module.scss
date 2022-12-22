@@ -1,9 +1,14 @@
 @import "./../../sass/index.scss";
 
 .services {
-	max-width: 1312px;
+	max-width: 1392px;
 	margin: 0 auto;
+	padding: 0 40px 86px;
 	padding-bottom: 120px;
+
+	@include media("within", "lg") {
+		padding: 0 40px 86px;
+	}
 }
 
 .title {

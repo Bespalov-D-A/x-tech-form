@@ -2,9 +2,10 @@ import { FC } from "react";
 import { EventI } from "../../types/types";
 import EventItem from "../common/EventItem/EventItem";
 import s from "./Event.module.scss";
-import event1 from "./../../img/photo/mainPage/even1.jpg";
+import event1 from "./../../img/photo/mainPage/event1.jpg";
 import event2 from "./../../img/photo/mainPage/event2.jpg";
 import event3 from "./../../img/photo/mainPage/event3.jpg";
+import BtnLink from "../common/BtnLink/BtnLink";
 
 const data = [
   {
@@ -38,8 +39,13 @@ const EventComp: FC = () => {
 
   return (
     <div className={s.event}>
-      <h2 className={s.title}>События</h2>
-      <div className={s.list}>{remapEvents(data)}</div>
+      <div className={s.wrapper}>
+        <div className={s["title-block"]}>
+          <h2 className={s.title}>События</h2>
+          <BtnLink title="Все события" color="black" />
+        </div>
+        <div className={s.list}>{remapEvents(data)}</div>
+      </div>
     </div>
   );
 };

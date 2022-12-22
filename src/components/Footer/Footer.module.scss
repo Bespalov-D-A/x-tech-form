@@ -1,3 +1,5 @@
+@import "./../../sass/index.scss";
+
 .footer {
 	display: flex;
 	flex-flow: row wrap;
@@ -5,6 +7,9 @@
 	max-width: 1392px;
 	margin: 0 auto;
 	padding: 40px 0;
+	@include media("within", "lg") {
+		padding: 40px;
+	}
 }
 
 .right-side {
@@ -20,22 +25,36 @@
 	font-size: 12px;
 	line-height: 20px;
 	opacity: 0.8;
+	@include media("within", "lg") {
+	margin-bottom: 16px;
+	}
 }
 
 .left-side {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: flex-start;
 }
 
 .navigation {
-	width: 224px;
+	max-width: 224px;
+	width: 100%;
 	text-align: left;
+	.title {
+		margin-bottom: 11px;
+	}
+	@include media("within", "lg") {
+		font-size: 14px;
+		max-width: 184px;
+	}
 }
 
 .social {
 	width: 200px;
 	margin-right: 90px;
+	@include media("within", "lg") {
+		margin-right: 0;
+	}
 }
 
 .info {
@@ -52,7 +71,7 @@
 
 .title {
 	margin-bottom: 8px;
-	font-family: 'IBM_Plex_Sans';
+	font-family: "IBM_Plex_Sans";
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 32px;

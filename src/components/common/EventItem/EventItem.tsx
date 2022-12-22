@@ -8,10 +8,14 @@ const EventItem: FC<EventI> = (props) => {
 	return (
 		<div className={s.event}>
 			<img src={photo} className={s.mount} alt="" />
-			<img src={photo} className={s.photo} alt="" />
+			<div className={s["photo-block"]}>
+				<div className={s["photo-wrap"]}>
+					<img src={photo} className={s.photo} alt="" />
+				</div>
+			</div>
 			<h3 className={s.title}>{title}</h3>
 			<p className={s.desc}>{desc}</p>
-			<span>Читать далее</span>
+			<a href="#" className={s.lnk}>Читать далее</a>
 		</div>
 	);
 };

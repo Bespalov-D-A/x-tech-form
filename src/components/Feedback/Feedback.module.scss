@@ -18,6 +18,9 @@
 		background: url("./../../img/other/map.jpg") no-repeat;
 		background-position: left center;
 		z-index: 1;
+		@include media("within", "lg") {
+			left: -360px;
+		}
 	}
 	&:before {
 		content: "";
@@ -41,6 +44,9 @@
 	margin: 0 auto;
 	padding: 100px 0;
 	z-index: 2;
+	@include media("within", "lg") {
+		padding: 56px 40px;
+	}
 }
 
 .title {
@@ -56,6 +62,10 @@
 
 .info {
 	max-width: 335px;
+	@include media("within", "lg") {
+		width: 100%;
+		flex: 1 1;
+	}
 }
 
 .where-title {
@@ -78,6 +88,9 @@
 
 .mail {
 	margin-bottom: 50px;
+	@include media("within", "lg") {
+		margin-bottom: 124px;
+	}
 }
 
 .address,

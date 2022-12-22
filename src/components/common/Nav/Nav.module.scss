@@ -11,10 +11,11 @@
 		margin-right: 0;
 		.menu-block {
 			margin-right: 0;
-			margin-bottom: 16px;
+			&:not(:last-child) {
+			margin-bottom: 18px;
+			}
 			&.active {
 				&:after {
-
 				}
 				a.link {
 					color: $gray4;
@@ -27,14 +28,14 @@
 .menu {
 	display: flex;
 	margin-right: 80px;
-	@include media('within' , 'lg') {
+	@include media("within", "lg") {
 		margin-right: 0;
 	}
 }
 
 .menu-block {
 	margin-right: 60px;
-	@include media('within', 'lg') {
+	@include media("within", "lg") {
 		margin-right: 40px;
 	}
 	&:last-child {

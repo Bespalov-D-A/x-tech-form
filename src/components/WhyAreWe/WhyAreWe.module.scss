@@ -1,14 +1,22 @@
+@import "./../../sass/index.scss";
+
 .why-are-we {
 	display: flex;
 	max-width: 1312px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 120px 0;
+	@include media("within", "lg") {
+		padding: 80px 40px;
+	}
 }
 
 .description {
 	flex-grow: 1;
 	padding-right: 40px;
+	@include media("within", "lg") {
+		width: 439px;
+	}
 }
 
 .title {
@@ -16,8 +24,6 @@
 	font-family: "Commissioner";
 	font-style: normal;
 	font-weight: 700;
-	font-size: 48px;
-	line-height: 56px;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	font-feature-settings: "tnum" on, "lnum" on;
@@ -27,11 +33,21 @@
 	position: relative;
 	width: 752px;
 	height: 448px;
+	@include media("within", "lg") {
+		display: flex;
+		align-items: flex-end;
+		width: 464px;
+		height: auto;
+	}
 }
 
 .cover__image {
 	position: relative;
 	z-index: 1;
+	@include media("within", "lg") {
+		width: 464px;
+		height: 273px;
+	}
 }
 
 .mount {
@@ -40,9 +56,15 @@
 	height: 448px;
 	top: 5px;
 	left: 0;
-	filter: blur(10px);
+	filter: blur(20px);
 	z-index: 0;
-	opacity: 0.5;
+	opacity: 0.6;
+	@include media("within", "lg") {
+		top: auto;
+		bottom: -20px;
+		width: 464px;
+		height: 273px;
+	}
 }
 
 .list {
@@ -56,6 +78,12 @@
 	line-height: 140%;
 	&:not(:last-child) {
 		margin-bottom: 28px;
+	}
+	@include media("within", "lg") {
+		font-size: 14px;
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
 	}
 	&:before {
 		content: "";
