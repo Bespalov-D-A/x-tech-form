@@ -5,6 +5,7 @@
 @import './colors.scss';
 
 body {
+	position: relative;
 	width: 100%;
 	font-family: 'IBM_plex_mono';
 	font-size: 18px;
@@ -24,3 +25,5 @@ a {
 		color: #fff;
 	}
 }
+
+
