@@ -1,7 +1,7 @@
 @import "./../../sass/index.scss";
 
 .wrapper {
-	background-color: #4d5062;
+	background-color: $pale-black;
 }
 
 .feedback-wrap {
@@ -20,6 +20,10 @@
 		z-index: 1;
 		@include media("within", "lg") {
 			left: -360px;
+		}
+
+		@include media("within", "md") {
+			background: none;
 		}
 	}
 	&:before {
@@ -47,6 +51,12 @@
 	@include media("within", "lg") {
 		padding: 56px 40px;
 	}
+
+	@include media("within", "md") {
+		height: unset;
+		padding: 0;
+		overflow: hidden;
+	}
 }
 
 .title {
@@ -58,13 +68,57 @@
 	text-transform: uppercase;
 	font-feature-settings: "tnum" on, "lnum" on;
 	color: #fff;
+
+	@include media("within", "md") {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 32px;
+	}
 }
 
 .info {
+	position: relative;
 	max-width: 335px;
+	z-index: 150;
 	@include media("within", "lg") {
 		width: 100%;
 		flex: 1 1;
+	}
+	@include media("within", "md") {
+		max-width: 304px;
+		padding: 40px 28px 76px;
+	}
+}
+
+.mount {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 477px;
+	z-index: 1;
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 1024px;
+		height: 100%;
+		background: url("./../../img/other/map.jpg") no-repeat;
+		background-position: right -700px center;
+		z-index: 1;
+	}
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 1024px;
+		height: 100%;
+		background: linear-gradient(0deg, $pale-black, 25%, transparent);
+		z-index: 2;
 	}
 }
 
