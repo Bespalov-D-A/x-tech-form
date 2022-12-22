@@ -1,4 +1,4 @@
-@import './../../../sass/index.scss';
+@import "./../../../sass/index.scss";
 
 .tech {
 	display: flex;
@@ -11,10 +11,14 @@
 		width: auto;
 		flex: 1 1;
 	}
+
+	@include media("within", "md") {
+		max-width: unset;
+		width: 50%;
+	}
 }
 
 .title {
-	
 }
 
 .cover {
@@ -32,6 +36,10 @@
 	display: flex;
 	flex-flow: column wrap;
 	flex: 1 1;
+
+	@include media("within", "md") {
+		padding-top: 30px;
+	}
 }
 
 .desc__text {
@@ -40,6 +48,10 @@
 	line-height: 140%;
 	@include media("within", "lg") {
 		font-size: 14px;
+	}
+
+	@include media("within", "md") {
+		display: none;
 	}
 }
 
@@ -50,4 +62,9 @@
 	font-weight: 700;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
+	@include media("within", "md") {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 32px;
+	}
 }
