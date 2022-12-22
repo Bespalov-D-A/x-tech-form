@@ -7,6 +7,9 @@
 	@include media("within", "lg") {
 		padding: 80px 40px;
 	}
+	@include media("within", "md") {
+		padding: 40px 28px 70px;
+	}
 }
 
 .title {
@@ -16,17 +19,29 @@
 	text-transform: uppercase;
 	letter-spacing: 0.04em;
 	font-feature-settings: "tnum" on, "lnum" on;
+	@include media("within", "md") {
+		margin-bottom: 12px;
+	}
 }
 
 .list {
 	display: flex;
 	justify-content: space-between;
+	@include media("within", "md") {
+		flex-flow: column wrap;
+	}
 }
 
 .item {
 	max-width: 272px;
 	@include media("within", "lg") {
 		max-width: 192px;
+	}
+	@include media("within", "md") {
+		display: flex;
+		max-width: unset;
+		margin-bottom: 16px;
+		margin-right: 250px;
 	}
 }
 
@@ -38,6 +53,10 @@
 	left: -40px;
 	filter: sepia(51%);
 	opacity: 0.3;
+
+	@include media("within", "md") {
+		display: none;
+	}
 }
 
 .num {
@@ -53,6 +72,13 @@
 	@include media("within", "lg") {
 		font-size: 62px;
 	}
+	@include media("within", "md") {
+		display: block;
+		width: 45px;
+		height: 80px;
+		font-size: 62px;
+		text-align: center;
+	}
 }
 
 .desc {
@@ -61,4 +87,8 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 140%;
+	opacity: 0.9;
+	@include media("within", "md") {
+		padding: 20px 0 0 45px;
+	}
 }
