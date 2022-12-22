@@ -58,3 +58,8 @@
 	font-size: 16px;
 	line-height: 140%;
 }
+
+.lnk, .lnk:link, .lnk:visited {
+	text-decoration: none;
+	color: $blue1;
+}
