@@ -8,6 +8,7 @@ const Feedback: FC = () => {
     <div className={s.wrapper}>
       <div className={s["feedback-wrap"]}>
         <div className={s.feedback}>
+          <div className={s.mount} />
           <div className={s.info}>
             <h1 className={s.title}>свяжитесь с нами</h1>
             <h3 className={s["where-title"]}>МЫ НАХОДИМСЯ</h3>
@@ -22,7 +23,7 @@ const Feedback: FC = () => {
             </div>
           </div>
 
-        <FeedbackForm />
+          <FeedbackForm />
         </div>
       </div>
     </div>
