@@ -5,16 +5,24 @@
 	margin: 0 auto 154px;
 	padding: 40px 40px 68px;
 	@include media("within", "lg") {
-	padding: 40px 16px 0;
-	margin-bottom: 40px;
+		padding: 40px 16px 0;
+		margin-bottom: 40px;
+	}
+
+	@include media("within", "md") {
+		padding: 28px 16px 0;
+		margin-bottom: 40px;
 	}
 }
 
 .wrapper {
-	padding: 40px;	
+	padding: 40px;
 	background: $cream;
 	@include media("within", "lg") {
 		padding: 24px;
+	}
+	@include media("within", "md") {
+		padding: 16px;
 	}
 }
 
