@@ -4,6 +4,9 @@
 	position: relative;
 	width: 640px;
 	z-index: 10;
+	@include media("within", "lg") {
+		width: 464px;
+	}
 }
 
 .form {
@@ -17,14 +20,18 @@
 	max-width: 306px;
 	width: 100%;
 	height: 48px;
-	margin-bottom: 32px;
+margin-bottom: 32px;
 	overflow: hidden;
 	background: $gray5;
+	@include media("within", "lg") {
+		max-width: 216px;
+	}
 	&.text {
 		max-width: 100%;
 		width: 100%;
 		height: 144px;
 		flex-grow: 1;
+		margin-bottom: 20px;
 	}
 }
 
@@ -63,16 +70,22 @@ textarea.inp {
 	justify-content: space-between;
 	max-width: 640px;
 	width: 100%;
+	margin-bottom: 34px;
+	@include media("within", "lg") {
+		flex-flow: column wrap;
+	}
 }
 
 .license {
 	display: flex;
 	max-width: 390px;
-	margin-bottom: 34px;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 140%;
 	color: #fff;
+	@include media("within", "lg") {
+		margin-bottom: 20px;
+	}
 }
 
 .checkb {
@@ -93,7 +106,7 @@ textarea.inp {
 	font-weight: 700;
 	font-size: 12px;
 	text-align: center;
-	background: $gray3;
+	background: $gray4;
 	&:after {
 		content: "";
 		position: absolute;
