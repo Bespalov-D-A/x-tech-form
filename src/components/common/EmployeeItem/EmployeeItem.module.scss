@@ -16,6 +16,17 @@
 			margin-right: 16px;
 		}
 	}
+	@include media("within", "md") {
+		&:not(:nth-child(3)) {
+			margin-right: 20px;
+		}
+		&:nth-child(3) {
+			margin-right: 0;
+		}
+		&:last-child {
+			display: none;
+		}
+	}
 	&:hover {
 		.mount {
 			width: 664px;
@@ -34,7 +45,7 @@
 	height: 180px;
 	padding-top: 16px;
 	overflow: hidden;
-	@include media("within", "lg") {
+	@include media("max", "lg") {
 		width: 100%;
 	}
 	&:after {
@@ -97,7 +108,7 @@
 
 .spec {
 	padding: 0 24px 16px;
-	@include media("within", "lg") {
+	@include media("max", "lg") {
 		padding: 0 15px 16px;
 	}
 }
@@ -108,7 +119,7 @@
 	height: 60px;
 	border-bottom: solid 1px $gray5;
 	letter-spacing: 0.04em;
-	@include media("within", "lg") {
+	@include media("max", "lg") {
 		font-size: 14px;
 	}
 }
