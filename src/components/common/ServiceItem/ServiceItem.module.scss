@@ -6,24 +6,10 @@
 	width: 100%;
 	margin-right: 32px;
 	@include media("within", "lg") {
-		max-width: 304px;
-
 		margin-right: 16px;
 	}
 	&:last-child {
 		margin-right: 0;
-	}
-}
-
-.mount {
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	filter: blur(10px);
-	z-index: 0;
-	opacity: 0.6;
-	@include media("within", "lg") {
-		max-width: 304px;
 	}
 }
 
@@ -33,9 +19,23 @@
 	z-index: 1;
 }
 
-.photo {
+.mount {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 100%;
+	filter: blur(10px);
+	z-index: 0;
+	opacity: 0.6;
 	@include media("within", "lg") {
-		max-width: 304px;
+	}
+}
+
+.photo {
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	@include media("within", "lg") {
 	}
 }
 
