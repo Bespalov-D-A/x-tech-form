@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { NavLink } from "react-router-dom";
 import Btn from "../common/Btn/Btn";
 import Nav from "../common/Nav/Nav";
 import logo from "./../../img/other/technology.png";

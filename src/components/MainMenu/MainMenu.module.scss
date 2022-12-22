@@ -12,6 +12,12 @@
 		height: 88px;
 		padding: 0 40px;
 	}
+	@include media('max', 'md') {
+		position: absolute;
+		width: 80%;
+		top: 0;
+		left: -80%;
+	}
 }
 
 .logo {
