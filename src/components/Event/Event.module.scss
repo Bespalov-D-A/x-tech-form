@@ -4,7 +4,18 @@
 	max-width: 1392px;
 	margin: 0 auto 154px;
 	padding: 40px 40px 68px;
+	@include media("within", "lg") {
+	padding: 40px 16px 0;
+	margin-bottom: 40px;
+	}
+}
+
+.wrapper {
+	padding: 40px;	
 	background: $cream;
+	@include media("within", "lg") {
+		padding: 24px;
+	}
 }
 
 .list {
@@ -12,8 +23,16 @@
 	justify-content: space-between;
 }
 
-.title {
+.title-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
 	margin-bottom: 25px;
+	@include media("within", "lg") {
+	}
+}
+
+.title {
 	font-family: "Commissioner";
 	font-style: normal;
 	font-weight: 700;
