@@ -1,5 +1,4 @@
 import { FC } from "react";
-import Btn from "../Btn/Btn";
 import BtnLink from "../BtnLink/BtnLink";
 import s from "./ServiceItem.module.scss";
 
@@ -13,8 +12,8 @@ const ServiceItem: FC<ServiceItemI> = (props) => {
 
 	return (
 		<div className={s["service-item"]}>
-			<img src={image} className={s.mount} alt="" />
 			<div className={s.cover}>
+				<img src={image} className={s.mount} alt="" />
 				<img src={image} alt="" className={s.photo} />
 			</div>
 			<p className={s.title}>{title}</p>
