@@ -15,7 +15,7 @@
 	@media screen and (max-width: 1919px) {
 		padding-left: 40px;
 	}
-	@include media('within', 'lg') {
+	@include media("within", "lg") {
 		justify-content: space-between;
 		padding-left: 40px;
 	}
@@ -32,7 +32,7 @@
 	@media screen and (max-width: 1919px) {
 		margin-right: auto;
 	}
-	@include media('within', 'lg') {
+	@include media("within", "lg") {
 		margin-right: 0;
 	}
 }
@@ -40,6 +40,8 @@
 .list {
 	display: flex;
 	height: 100%;
+	div.list__block {
+	}
 }
 
 .list__block {
@@ -49,12 +51,21 @@
 		margin-right: 118px;
 		background: url("./../../../img/ico/common/2099.svg") no-repeat;
 		background-position: center center;
+		@include media("within", "md") {
+			width: 76px;
+			background-size: 76px;
+		}
 	}
 	&:nth-child(2) {
 		width: 184px;
 		margin-right: 112px;
 		background: url("./../../../img/ico/common/clover.svg") no-repeat;
 		background-position: center center;
+		@include media("within", "md") {
+			width: 112px;
+			background-size: 112px;
+			background-position: center 53%;
+		}
 	}
 
 	&:nth-child(3) {
@@ -62,16 +73,32 @@
 		margin-right: 102px;
 		background: url("./../../../img/ico/common/basic-chain.svg") no-repeat;
 		background-position: center 45%;
+		@include media("within", "md") {
+			width: 117px;
+			background-size: 117px;
+			background-position: center 50%;
+		}
 	}
 	&:nth-child(4) {
 		width: 145px;
 		margin-right: 102px;
 		background: url("./../../../img/ico/common/ctrlgo.svg") no-repeat;
 		background-position: center 60%;
+		@include media("within", "md") {
+			width: 88px;
+			background-size: 88px;
+		}
 	}
-	@include media('within', 'lg') {
-		&:not(:last-child), &:last-child {
+	@include media("within", "lg") {
+		&:not(:last-child),
+		&:last-child {
 			margin-right: 40px;
+		}
+	}
+	@include media("within", "md") {
+		&:not(:last-child),
+		&:last-child {
+			margin-right: 32px;
 		}
 	}
 }
