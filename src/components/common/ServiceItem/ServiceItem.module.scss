@@ -8,6 +8,12 @@
 	@include media("within", "lg") {
 		margin-right: 16px;
 	}
+	@include media("within", "md") {
+		display: flex;
+		flex-flow: row wrap;
+		max-width: unset;
+		margin-bottom: 56px;
+	}
 	&:last-child {
 		margin-right: 0;
 	}
@@ -17,6 +23,10 @@
 	position: relative;
 	margin-bottom: 24px;
 	z-index: 1;
+	@include media("within", "md") {
+		width: 252px;
+		margin-right: 24px;
+	}
 }
 
 .mount {
@@ -55,4 +65,8 @@
 	font-size: 16px;
 	line-height: 140%;
 	color: $black;
+}
+
+.content {
+	flex: 1 1;
 }
