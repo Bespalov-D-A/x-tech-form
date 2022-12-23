@@ -9,8 +9,16 @@
 	@include media("within", "lg") {
 		padding: 0 40px 86px;
 	}
-	@include media('within', 'md') {
+	@include media("within", "md") {
 		padding: 0 28px 86px;
+	}
+	@include media("max", "sm") {
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		margin-bottom: 0;
+		padding: 32px 16px;
+		background: $cream;
 	}
 }
 
@@ -23,11 +31,15 @@
 	font-feature-settings: "tnum" on, "lnum" on;
 	color: $black;
 	text-shadow: -3px -3px 6px #ffffff, 3px 3px 6px rgba(49, 69, 106, 0.3);
+	@include media("max", "sm") {
+		width: 100%;
+		max-width: 444px;
+	}
 }
 
 .list {
 	display: flex;
-	@include media('within', 'md') {
+	@include media("max", "md") {
 		flex-flow: column wrap;
 	}
 }
