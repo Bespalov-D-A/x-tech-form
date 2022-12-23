@@ -10,7 +10,9 @@
 	@include media("within", "md") {
 		padding: 40px 28px 70px;
 	}
-
+	@include media("max", "sm") {
+		padding: 32px 16px;
+	}
 }
 
 .title {
@@ -28,7 +30,7 @@
 .list {
 	display: flex;
 	justify-content: space-between;
-	@include media("within", "md") {
+	@include media("max", "md") {
 		flex-flow: column wrap;
 	}
 }
@@ -44,6 +46,10 @@
 		margin-bottom: 16px;
 		margin-right: 250px;
 	}
+	@include media("max", "sm") {
+		display: flex;
+		max-width: unset;
+	}
 }
 
 .arrow {
@@ -55,7 +61,7 @@
 	filter: sepia(51%);
 	opacity: 0.3;
 
-	@include media("within", "md") {
+	@include media("max", "md") {
 		display: none;
 	}
 }
@@ -73,7 +79,7 @@
 	@include media("within", "lg") {
 		font-size: 62px;
 	}
-	@include media("within", "md") {
+	@include media("max", "md") {
 		display: block;
 		width: 45px;
 		height: 80px;
@@ -89,7 +95,7 @@
 	font-size: 16px;
 	line-height: 140%;
 	opacity: 0.9;
-	@include media("within", "md") {
-		padding: 20px 0 0 45px;
+	@include media("max", "md") {
+		padding: 20px 0 0 25px;
 	}
 }
