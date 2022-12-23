@@ -6,6 +6,9 @@
 	height: 400px;
 	overflow: hidden;
 	background: $cream;
+	@include media("max", "sm") {
+		display: none;
+	}
 	&:before {
 		content: "";
 		display: block;
