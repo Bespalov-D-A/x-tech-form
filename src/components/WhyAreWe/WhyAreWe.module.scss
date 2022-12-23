@@ -12,6 +12,9 @@
 	@include media("within", "md") {
 		padding: 0 28px;
 	}
+	@include media("max", "sm") {
+		padding: 32px 16px 0;
+	}
 }
 
 .description {
@@ -22,6 +25,10 @@
 	}
 	@include media("within", "md") {
 		padding-right: 25px;
+	}
+
+	@include media("max", "sm") {
+		padding-right: 0;
 	}
 }
 
@@ -49,6 +56,9 @@
 	@include media("within", "md") {
 		width: 344px;
 		padding-top: 70px;
+	}
+	@include media("max", "sm") {
+		display: none;
 	}
 }
 
@@ -108,6 +118,10 @@
 
 	@include media("within", "md") {
 		font-size: 14px;
+	}
+
+	@include media("max", "sm") {
+		font-size: 12px;
 	}
 	&:before {
 		content: "";
