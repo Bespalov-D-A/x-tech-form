@@ -22,9 +22,26 @@
 	@include media("within", "md") {
 		padding-left: 28px;
 	}
+	@include media("max", "sm") {
+		height: 136px;
+		flex-flow: column wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 16px;
+	}
 }
 
-.desc {
+div.desc-mobile {
+	display: none;
+	@include media("max", "sm") {
+		display: block;
+		opacity: 0.8;
+		color: $blue1;
+	}
+}
+
+.desc,
+.desc-mobile {
 	margin-right: 231px;
 	font-family: "IBM_Plex_Sans";
 	font-size: 12px;
@@ -38,12 +55,24 @@
 	@include media("within", "lg") {
 		margin-right: 0;
 	}
+
+	@include media("max", "sm") {
+		margin-right: 0;
+	}
+}
+
+.desc {
+	@include media("max", "sm") {
+		display: none;
+	}
 }
 
 .list {
 	display: flex;
 	height: 100%;
-	div.list__block {
+	@include media("max", "sm") {
+		height: 60px;
+		overflow: hidden;
 	}
 }
 
@@ -54,7 +83,7 @@
 		margin-right: 118px;
 		background: url("./../../../img/ico/common/2099.svg") no-repeat;
 		background-position: center center;
-		@include media("within", "md") {
+		@include media("max", "md") {
 			width: 76px;
 			background-size: 76px;
 		}
@@ -64,7 +93,7 @@
 		margin-right: 112px;
 		background: url("./../../../img/ico/common/clover.svg") no-repeat;
 		background-position: center center;
-		@include media("within", "md") {
+		@include media("max", "md") {
 			width: 112px;
 			background-size: 112px;
 			background-position: center 53%;
@@ -76,7 +105,7 @@
 		margin-right: 102px;
 		background: url("./../../../img/ico/common/basic-chain.svg") no-repeat;
 		background-position: center 45%;
-		@include media("within", "md") {
+		@include media("max", "md") {
 			width: 117px;
 			background-size: 117px;
 			background-position: center 50%;
@@ -87,7 +116,7 @@
 		margin-right: 102px;
 		background: url("./../../../img/ico/common/ctrlgo.svg") no-repeat;
 		background-position: center 60%;
-		@include media("within", "md") {
+		@include media("max", "md") {
 			width: 88px;
 			background-size: 88px;
 		}
@@ -98,7 +127,7 @@
 			margin-right: 40px;
 		}
 	}
-	@include media("within", "md") {
+	@include media("max", "md") {
 		&:not(:last-child) {
 			margin-right: 32px;
 		}
