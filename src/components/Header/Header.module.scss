@@ -19,4 +19,7 @@
 		padding-left: 27px;
 		margin-bottom: 56px;
 	}
+	@include media("max", "sm") {
+		padding: 0 0 0 16px;
+	}
 }
