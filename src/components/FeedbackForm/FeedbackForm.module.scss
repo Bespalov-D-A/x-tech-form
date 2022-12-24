@@ -12,6 +12,10 @@
 		width: 100%;
 		padding: 0 28px;
 	}
+	@include media("max", "sm") {
+		width: 100%;
+		padding-top: 60px;
+	}
 }
 
 .form {
@@ -37,6 +41,10 @@
 
 	@include media("within", "md") {
 		width: calc(50% - 16px);
+		max-width: unset;
+	}
+	@include media("max", "sm") {
+		width: 100%;
 		max-width: unset;
 	}
 	&.text {
@@ -90,6 +98,9 @@ textarea.inp {
 	@include media("within", "md") {
 		max-width: unset;
 	}
+	@include media("max", "sm") {
+		flex-flow: column-reverse wrap;
+	}
 }
 
 .license {
@@ -125,6 +136,11 @@ textarea.inp {
 	font-size: 12px;
 	text-align: center;
 	background: $gray4;
+	@include media("max", "sm") {
+		width: 100%;
+		max-width: 300px;
+		margin-bottom: 32px;
+	}
 	&:after {
 		content: "";
 		position: absolute;
@@ -135,5 +151,8 @@ textarea.inp {
 		left: 26px;
 		background: url("./../../img/ico/common/attach.svg") no-repeat;
 		background-size: 16px;
+		@include media("max", "sm") {
+			left: 90px;
+		}
 	}
 }

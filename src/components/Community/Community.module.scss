@@ -11,6 +11,10 @@
 	@include media("within", "md") {
 		padding: 0 28px 00px;
 	}
+	@include media("max", "sm") {
+		flex-flow: column wrap;
+		padding: 32px 16px 0;
+	}
 }
 
 .desc-block {
@@ -43,6 +47,10 @@
 		font-size: 14px;
 		line-height: 120%;
 	}
+	@include media("max", "sm") {
+		font-size: 12px;
+		padding-right: 0;
+	}
 }
 
 .video-block {
@@ -50,6 +58,9 @@
 	width: 100%;
 	max-width: 752px;
 	margin-top: 80px;
+	@include media("max", "sm") {
+		margin-top: 20px;
+	}
 }
 
 .video-wrap {

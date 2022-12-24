@@ -1,8 +1,7 @@
 @import "./../../../sass/index.scss";
 
 .tech {
-	display: flex;
-	flex-flow: row wrap;
+	position: relative;
 	max-width: 672px;
 	width: 100%;
 	min-height: 193px;
@@ -16,6 +15,31 @@
 		max-width: unset;
 		width: 50%;
 	}
+
+	@include media("max", "sm") {
+		flex-flow: column wrap;
+		width: calc(50% - 8px);
+		min-height: unset;
+		margin-right: 16px;
+		margin-bottom: 16px;
+		overflow: hidden;
+		background: $cream;
+		&:nth-child(even) {
+			margin-right: 0;
+		}
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	@include media("max", "sm") {
+		position: relative;
+		min-height: 148px;
+		padding-top: 91.503%;
+		padding-bottom: 8px;
+		background: $cream;
+	}
 }
 
 .title {
@@ -27,9 +51,20 @@
 	height: auto;
 	overflow: hidden;
 	text-align: center;
+	@include media("max", "sm") {
+		position: absolute;
+		top: calc(50% - 65px);
+		left: -5px;
+		width: 100%;
+		height: 130px;
+	}
 }
 
 .photo {
+	@include media("max", "sm") {
+		position: relative;
+		right: -5px;
+	}
 }
 
 .desc {
@@ -39,6 +74,13 @@
 
 	@include media("within", "md") {
 		padding-top: 30px;
+	}
+	@include media("max", "sm") {
+		position: absolute;
+		top: calc(72%);
+		left: 0;
+		right: 0;
+		text-align: center;
 	}
 }
 
@@ -50,7 +92,7 @@
 		font-size: 14px;
 	}
 
-	@include media("within", "md") {
+	@include media("max", "md") {
 		display: none;
 	}
 }

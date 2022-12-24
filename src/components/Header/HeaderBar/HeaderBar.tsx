@@ -8,6 +8,10 @@ const HeaderBar: FC<HeaderBarI> = (props) => {
     <div className={s.desc}>
       Нам доверяют<br/> лидирующие бренды <br/>и стратапы
     </div>
+    <div className={s['desc-mobile']}>
+      Нам доверяют лидирующие бренды <br/>и стратапы
+    </div>
+
     <div className={s.list}>
       <div className={s['list__block']}> </div>
       <div className={s['list__block']}></div>
