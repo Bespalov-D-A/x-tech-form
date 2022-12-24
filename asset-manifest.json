@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/x-tech-form/static/css/main.2a17748f.css",
-    "main.js": "/x-tech-form/static/js/main.0829f149.js",
+    "main.css": "/x-tech-form/static/css/main.f4430555.css",
+    "main.js": "/x-tech-form/static/js/main.8889346e.js",
     "static/media/video.png": "/x-tech-form/static/media/video.c35b99e6452528e54de0.png",
     "static/media/x-header.png": "/x-tech-form/static/media/x-header.33a091891180339bc031.png",
     "static/media/prof4.png": "/x-tech-form/static/media/prof4.205688942feaa9452cf1.png",
@@ -53,11 +53,11 @@
     "static/media/mMenu.svg": "/x-tech-form/static/media/mMenu.6df74b74423b3106d5e6.svg",
     "static/media/Arrow.svg": "/x-tech-form/static/media/Arrow.c15e814b8b379e7fdad1286e0c96e2b3.svg",
     "static/media/union.svg": "/x-tech-form/static/media/union.2ed7abcf54ccbbcea26251b8e13d713a.svg",
-    "main.2a17748f.css.map": "/x-tech-form/static/css/main.2a17748f.css.map",
-    "main.0829f149.js.map": "/x-tech-form/static/js/main.0829f149.js.map"
+    "main.f4430555.css.map": "/x-tech-form/static/css/main.f4430555.css.map",
+    "main.8889346e.js.map": "/x-tech-form/static/js/main.8889346e.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a17748f.css",
-    "static/js/main.0829f149.js"
+    "static/css/main.f4430555.css",
+    "static/js/main.8889346e.js"
   ]
 }
