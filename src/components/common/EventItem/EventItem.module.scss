@@ -9,6 +9,8 @@
 	}
 @include media('max', 'sm') {
 		min-width: 244px;
+		max-width: 244px;
+		min-height: 370px;
 	}
 }
 

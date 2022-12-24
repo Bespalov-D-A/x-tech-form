@@ -29,7 +29,7 @@
 	}
 
 	@include media("max", "sm") {
-		min-width: 224px;
+		max-width: 224px;
 	}
 	&:hover {
 		.mount {

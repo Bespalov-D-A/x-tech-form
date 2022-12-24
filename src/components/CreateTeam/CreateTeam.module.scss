@@ -61,7 +61,7 @@
 		font-size: 14px;
 	}
 	@include media("max", "sm") {
-		display: none;
+		//display: none;
 	}
 }
 
@@ -76,7 +76,7 @@
 	}
 	@include media("max", "sm") {
 		padding: 16px 0 16px 16px;
-		overflow: hidden;
+		//overflow: hidden;
 	}
 }
 
@@ -92,7 +92,7 @@
 		margin-bottom: 24px;
 	}
 	@include media("max", "sm") {
-		overflow: hidden;
+		//overflow: hidden;
 	}
 }
 
@@ -107,5 +107,12 @@
 	}
 	@include media("max", "md") {
 		margin-bottom: 32px;
+	}
+}
+
+.carousel {
+	width: 100%;
+	@include media('min', 'sm') {
+		display: flex;
 	}
 }

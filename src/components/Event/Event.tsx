@@ -1,11 +1,13 @@
-import { FC } from "react";
+import { FC, useEffect, useRef } from "react";
 import { EventI } from "../../types/types";
+import { useMediaQuery } from "react-responsive";
 import EventItem from "../common/EventItem/EventItem";
 import s from "./Event.module.scss";
 import event1 from "./../../img/photo/mainPage/event1.jpg";
 import event2 from "./../../img/photo/mainPage/event2.jpg";
 import event3 from "./../../img/photo/mainPage/event3.jpg";
 import BtnLink from "../common/BtnLink/BtnLink";
+import Flickity from "react-flickity-component";
 
 const data = [
   {
@@ -26,6 +28,29 @@ const data = [
 ];
 
 const EventComp: FC = () => {
+  const flckty = useRef() as any;
+
+  const flickityOptions = {
+    pageDots: false,
+    draggable: true,
+    contain: true,
+    freeScroll: true,
+    prevNextButtons: false,
+  };
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
+
+  useEffect(() => {
+    if (!isDesktopOrLaptop && flckty.current.isActive) flckty.current.destroy();
+    else if (isDesktopOrLaptop && !flckty.current.isActive) {
+      flckty.current.activate();
+      flckty.current.onActivateDrag();
+    }
+    console.log(flckty.current);
+  }, [isDesktopOrLaptop]);
+
   const remapEvents = (arr: EventI[]) => {
     return arr.map((item, index) => (
       <EventItem
@@ -44,7 +69,19 @@ const EventComp: FC = () => {
           <h2 className={s.title}>События</h2>
           <BtnLink title="Все события" color="black" />
         </div>
-        <div className={s.list}>{remapEvents(data)}</div>
+        <div className={s.list}>
+          <Flickity
+            flickityRef={(flkt) => (flckty.current = flkt)}
+            className={s.list} // default ''
+            elementType={"div"} // default 'div'
+            options={flickityOptions} // takes flickity options {}
+            disableImagesLoaded={false} // default false
+            reloadOnUpdate={true} // default false
+            static // default false
+          >
+            {remapEvents(data)}
+          </Flickity>
+        </div>
       </div>
     </div>
   );

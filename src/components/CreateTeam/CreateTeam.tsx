@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect, useRef } from "react";
 import Btn from "../common/Btn/Btn";
 import s from "./CreateTeam.module.scss";
 import alex from "./../../img/photo/mainPage/prof1.jpeg";
@@ -7,6 +7,8 @@ import nata from "./../../img/photo/mainPage/prof3.jpeg";
 import petr from "./../../img/photo/mainPage/prof4.png";
 import { IEmployee } from "../../types/types";
 import EmployeeItem from "../common/EmployeeItem/EmployeeItem";
+import Flickity from "react-flickity-component";
+import { useMediaQuery } from "react-responsive";
 
 const employees = [
   {
@@ -41,6 +43,29 @@ const employees = [
 ];
 
 const CreateTeam: FC = () => {
+  const flckty = useRef() as any;
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
+
+  useEffect(() => {
+    if (!isDesktopOrLaptop && flckty.current.isActive) flckty.current.destroy();
+    else if (isDesktopOrLaptop && !flckty.current.isActive) {
+      flckty.current.activate();
+      flckty.current.onActivateDrag();
+    }
+    console.log(flckty.current);
+  }, [isDesktopOrLaptop]);
+
+  const flickityOptions = {
+    pageDots: false,
+    draggable: true,
+    contain: true,
+    freeScroll: true,
+    prevNextButtons: false,
+  };
+
   const remapEmployees = (arr: IEmployee[]) => {
     return arr.map((employee: IEmployee, index) => (
       <EmployeeItem
@@ -66,7 +91,19 @@ const CreateTeam: FC = () => {
         </p>
       </div>
       <div className={s.info}>
-        <div className={s.list}>{remapEmployees(employees)}</div>
+        <div className={s.list}>
+          <Flickity
+            flickityRef={(flkt) => (flckty.current = flkt)}
+            className={s.carousel} // default ''
+            elementType={"div"} // default 'div'
+            options={flickityOptions} // takes flickity options {}
+            disableImagesLoaded={false} // default false
+            reloadOnUpdate // default false
+            static // default false
+          >
+            {remapEmployees(employees)}
+          </Flickity>
+        </div>
         <div className={s.more}>
           <p className={s["more__text"]}>
             ...and <b>4368</b> more developers
