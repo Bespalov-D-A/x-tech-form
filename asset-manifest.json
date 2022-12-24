@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/x-tech-form/static/css/main.f4430555.css",
-    "main.js": "/x-tech-form/static/js/main.8889346e.js",
+    "main.css": "/x-tech-form/static/css/main.8c1da8c8.css",
+    "main.js": "/x-tech-form/static/js/main.1e7dc815.js",
     "static/media/video.png": "/x-tech-form/static/media/video.c35b99e6452528e54de0.png",
     "static/media/x-header.png": "/x-tech-form/static/media/x-header.33a091891180339bc031.png",
     "static/media/prof4.png": "/x-tech-form/static/media/prof4.205688942feaa9452cf1.png",
@@ -37,27 +37,27 @@
     "static/media/screen.jpg": "/x-tech-form/static/media/screen.8454550fba0dc7d85ed5.jpg",
     "static/media/prof1.jpeg": "/x-tech-form/static/media/prof1.ccdd1857a633cd7a2703.jpeg",
     "static/media/basic-chain.svg": "/x-tech-form/static/media/basic-chain.d1efd1d7862f704611f3.svg",
-    "static/media/blockchein.png": "/x-tech-form/static/media/blockchein.313365d9b2664214fd4a.png",
-    "static/media/mobile-app.png": "/x-tech-form/static/media/mobile-app.26327aa3512859cba8f0.png",
-    "static/media/app.png": "/x-tech-form/static/media/app.c785621c7d4530c890da.png",
-    "static/media/backend.png": "/x-tech-form/static/media/backend.8e0c2e38a5a78c8aaf5e.png",
-    "static/media/frontend.png": "/x-tech-form/static/media/frontend.5c6c6f1e539a06247261.png",
-    "static/media/gamedev.png": "/x-tech-form/static/media/gamedev.230305b3c9aecd3f9300.png",
-    "static/media/bd.png": "/x-tech-form/static/media/bd.2c0285fffa33b19326d2.png",
+    "static/media/bd.svg": "/x-tech-form/static/media/bd.0faad7bb9b796447e1fc60e26dd54e5a.svg",
     "static/media/clover.svg": "/x-tech-form/static/media/clover.a4fd01699b031d9f6942.svg",
-    "static/media/layout.png": "/x-tech-form/static/media/layout.222aef56ed3068cbaa79.png",
+    "static/media/blockchein.svg": "/x-tech-form/static/media/blockchein.ab8be571989c0ec474955ccf606586e4.svg",
+    "static/media/backend.svg": "/x-tech-form/static/media/backend.2440bd28b5acafa8356362175d6b5759.svg",
+    "static/media/gamedev.svg": "/x-tech-form/static/media/gamedev.22f5eafb70c5da0d823cc678ff6dc086.svg",
+    "static/media/frontend.svg": "/x-tech-form/static/media/frontend.dc317bdd5ec8005baf92b8a2934b4e35.svg",
+    "static/media/app.svg": "/x-tech-form/static/media/app.20b955667a2874408adfcbedad53e8bc.svg",
     "static/media/ctrlgo.svg": "/x-tech-form/static/media/ctrlgo.a1cb71ec86932ed51222.svg",
+    "static/media/mobile-app.svg": "/x-tech-form/static/media/mobile-app.fcc1e93f6797b0851ace6ab99419667c.svg",
+    "static/media/layout.svg": "/x-tech-form/static/media/layout.5744791e8a7cdcfe3b12f42d4e243eaa.svg",
     "static/media/2099.svg": "/x-tech-form/static/media/2099.2fc921fd2d94558d1de2.svg",
     "static/media/attach.svg": "/x-tech-form/static/media/attach.766204fb8a5f98d8d715.svg",
     "index.html": "/x-tech-form/index.html",
     "static/media/mMenu.svg": "/x-tech-form/static/media/mMenu.6df74b74423b3106d5e6.svg",
     "static/media/Arrow.svg": "/x-tech-form/static/media/Arrow.c15e814b8b379e7fdad1286e0c96e2b3.svg",
     "static/media/union.svg": "/x-tech-form/static/media/union.2ed7abcf54ccbbcea26251b8e13d713a.svg",
-    "main.f4430555.css.map": "/x-tech-form/static/css/main.f4430555.css.map",
-    "main.8889346e.js.map": "/x-tech-form/static/js/main.8889346e.js.map"
+    "main.8c1da8c8.css.map": "/x-tech-form/static/css/main.8c1da8c8.css.map",
+    "main.1e7dc815.js.map": "/x-tech-form/static/js/main.1e7dc815.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4430555.css",
-    "static/js/main.8889346e.js"
+    "static/css/main.8c1da8c8.css",
+    "static/js/main.1e7dc815.js"
   ]
 }
