@@ -24,9 +24,9 @@ const Social: FC<SocialI> = ({ column }) => {
 
 	return (
 		<div className={s.social} style={socialStyle}>
-			{data.map((item) => {
+			{data.map((item, index) => {
 				return (
-					<div className={s.item}>
+					<div className={s.item} key={index}>
 						<img src={item.img} alt="" className={s.img}/>
 						<span className={s.name}>{column && item.name}</span>
 					</div>

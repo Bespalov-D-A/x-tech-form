@@ -30,6 +30,7 @@ const Services: FC = () => {
   const remapServices = (arr: IServiceItem[]) => {
     return arr.map((service: IServiceItem, index: number) => (
       <ServiceItem
+        key={index}
         image={imageArr[index]}
         title={service.title}
         description={service.description}

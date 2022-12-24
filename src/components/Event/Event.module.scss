@@ -32,8 +32,14 @@
 }
 
 .list {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
+	@include media('max', 'sm') {
+		display: unset;
+		justify-content: unset;
+	width: 100%;
+	}
 }
 
 .title-block {
@@ -51,4 +57,8 @@
 	font-weight: 700;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
+}
+
+.carousel {
+	width: 100%;
 }
