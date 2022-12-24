@@ -1,13 +1,13 @@
 import { FC } from "react";
 import s from "./Technologies.module.scss";
-import front from "./../../img/ico/mainPage/frontend.png";
-import app from "./../../img/ico/mainPage/app.png";
-import gamedev from "./../../img/ico/mainPage/gamedev.png";
-import design from "./../../img/ico/mainPage/layout.png";
-import blockchain from "./../../img/ico/mainPage/blockchein.png";
-import bd from "./../../img/ico/mainPage/bd.png";
-import mobApp from "./../../img/ico/mainPage/mobile-app.png";
-import back from "./../../img/ico/mainPage/backend.png";
+import front from "./../../img/ico/mainPage/frontend.svg";
+import app from "./../../img/ico/mainPage/app.svg";
+import gamedev from "./../../img/ico/mainPage/gamedev.svg";
+import design from "./../../img/ico/mainPage/layout.svg";
+import blockchain from "./../../img/ico/mainPage/blockchein.svg";
+import bd from "./../../img/ico/mainPage/bd.svg";
+import mobApp from "./../../img/ico/mainPage/mobile-app.svg";
+import back from "./../../img/ico/mainPage/backend.svg";
 import TechnoItem from "../common/TechnoItem/TechnoItem";
 import { ITechnology } from "../../types/types";
 
