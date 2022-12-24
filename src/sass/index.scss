@@ -1,0 +1,29 @@
+@import './variables.scss';
+@import './fontFace.scss';
+@import './mixin/fontMixin.scss';
+@import './font.scss';
+@import './colors.scss';
+
+body {
+	position: relative;
+	width: 100%;
+	font-family: 'IBM_plex_mono';
+	font-size: 18px;
+	color: $black;
+}
+
+b {
+	font-weight: 700;
+}
+
+a {
+	color: #fff;
+	&:link {
+		color: #fff;
+	}
+	&:visited {
+		color: #fff;
+	}
+}
+
+

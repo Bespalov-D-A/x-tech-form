@@ -1,0 +1,137 @@
+@import "./../../sass/index.scss";
+
+.why-are-we {
+	display: flex;
+	max-width: 1312px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 120px 0;
+	@include media("within", "lg") {
+		padding: 80px 40px;
+	}
+	@include media("within", "md") {
+		padding: 0 28px;
+	}
+	@include media("max", "sm") {
+		padding: 32px 16px 0;
+	}
+}
+
+.description {
+	flex-grow: 1;
+	padding-right: 40px;
+	@include media("within", "lg") {
+		width: 439px;
+	}
+	@include media("within", "md") {
+		padding-right: 25px;
+	}
+
+	@include media("max", "sm") {
+		padding-right: 0;
+	}
+}
+
+.title {
+	margin-bottom: 36px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-feature-settings: "tnum" on, "lnum" on;
+	opacity: 0.9;
+}
+
+.cover {
+	position: relative;
+	width: 752px;
+	height: 448px;
+	@include media("within", "lg") {
+		display: flex;
+		align-items: flex-end;
+		width: 464px;
+		height: auto;
+	}
+	@include media("within", "md") {
+		width: 344px;
+		padding-top: 70px;
+	}
+	@include media("max", "sm") {
+		display: none;
+	}
+}
+
+.cover__image {
+	position: relative;
+	z-index: 1;
+	@include media("within", "lg") {
+		width: 464px;
+		height: 273px;
+	}
+	@include media("within", "md") {
+		width: 344px;
+	}
+}
+
+.mount {
+	position: absolute;
+	width: 752px;
+	height: 448px;
+	top: 5px;
+	left: 0;
+	filter: blur(20px);
+	z-index: 0;
+	opacity: 0.6;
+	@include media("within", "lg") {
+		top: auto;
+		bottom: -20px;
+		width: 464px;
+		height: 273px;
+	}
+	@include media("within", "md") {
+		top: 90px;
+		width: 344px;
+		height: 200px;
+		opacity: 0.8;
+	}
+}
+
+.list {
+}
+
+.list__li {
+	position: relative;
+	display: block;
+	padding-left: 32px;
+	font-size: 16px;
+	line-height: 140%;
+	&:not(:last-child) {
+		margin-bottom: 28px;
+	}
+	@include media("within", "lg") {
+		font-size: 14px;
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+	}
+
+	@include media("within", "md") {
+		font-size: 14px;
+	}
+
+	@include media("max", "sm") {
+		font-size: 12px;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 24px;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: url("./../../img/ico/common/Arrow.svg") no-repeat;
+		background-position: center center;
+	}
+}

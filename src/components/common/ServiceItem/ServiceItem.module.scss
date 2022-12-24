@@ -1,0 +1,75 @@
+@import "./../../../sass/index.scss";
+
+.service-item {
+	position: relative;
+	max-width: 416px;
+	width: 100%;
+	margin-right: 32px;
+	@include media("within", "lg") {
+		margin-right: 16px;
+	}
+	@include media("within", "md") {
+		display: flex;
+		flex-flow: row wrap;
+		max-width: unset;
+		margin-bottom: 56px;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+	@include media('max', 'sm') {
+		margin-bottom: 40px;
+	}
+}
+
+.cover {
+	position: relative;
+	margin-bottom: 24px;
+	z-index: 1;
+	@include media("within", "md") {
+		width: 252px;
+		margin-right: 24px;
+	}
+}
+
+.mount {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 100%;
+	filter: blur(10px);
+	z-index: 0;
+	opacity: 0.6;
+	@include media("within", "lg") {
+	}
+}
+
+.photo {
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	@include media("within", "lg") {
+	}
+}
+
+.title {
+	margin-bottom: 8px;
+	@include font-size($lg-text);
+	font-family: "Commissioner";
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: $black;
+}
+
+.description {
+	padding-right: 6px;
+	margin-bottom: 32px;
+	font-size: 16px;
+	line-height: 140%;
+	color: $black;
+}
+
+.content {
+	flex: 1 1;
+}

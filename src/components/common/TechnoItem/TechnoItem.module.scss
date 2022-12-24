@@ -1,0 +1,112 @@
+@import "./../../../sass/index.scss";
+
+.tech {
+	position: relative;
+	max-width: 672px;
+	width: 100%;
+	min-height: 193px;
+	@include media("within", "lg") {
+		min-width: 464px;
+		width: auto;
+		flex: 1 1;
+	}
+
+	@include media("within", "md") {
+		max-width: unset;
+		width: 50%;
+	}
+
+	@include media("max", "sm") {
+		flex-flow: column wrap;
+		width: calc(50% - 8px);
+		min-height: unset;
+		margin-right: 16px;
+		margin-bottom: 16px;
+		overflow: hidden;
+		background: $cream;
+		&:nth-child(even) {
+			margin-right: 0;
+		}
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	@include media("max", "sm") {
+		position: relative;
+		min-height: 148px;
+		padding-top: 91.503%;
+		padding-bottom: 8px;
+		background: $cream;
+	}
+}
+
+.title {
+}
+
+.cover {
+	position: relative;
+	width: 150px;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+	@include media("max", "sm") {
+		position: absolute;
+		top: calc(50% - 65px);
+		left: -5px;
+		width: 100%;
+		height: 130px;
+	}
+}
+
+.photo {
+	@include media("max", "sm") {
+		position: relative;
+		right: -5px;
+	}
+}
+
+.desc {
+	display: flex;
+	flex-flow: column wrap;
+	flex: 1 1;
+
+	@include media("within", "md") {
+		padding-top: 30px;
+	}
+	@include media("max", "sm") {
+		position: absolute;
+		top: calc(72%);
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+}
+
+.desc__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	@include media("within", "lg") {
+		font-size: 14px;
+	}
+
+	@include media("max", "md") {
+		display: none;
+	}
+}
+
+.title {
+	margin-bottom: 8px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	@include media("within", "md") {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 32px;
+	}
+}

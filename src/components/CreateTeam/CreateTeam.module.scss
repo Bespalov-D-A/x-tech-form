@@ -1,0 +1,111 @@
+@import "./../../sass/index.scss";
+
+.create-team {
+	max-width: 1392px;
+	width: 100%;
+	margin: 0 auto 100px;
+	padding: 120px 0;
+	@include media("within", "lg") {
+		padding: 40px 24px 32px;
+	}
+	@include media("within", "md") {
+		padding: 100px 8px 0;
+	}
+	@include media("max", "sm") {
+		padding: 92px 0 0;
+	}
+}
+
+.header {
+	max-width: 1312px;
+	width: 100%;
+	margin: 0 auto;
+	@include media("within", "md") {
+		padding: 0 20px;
+	}
+	@include media("max", "sm") {
+		padding: 0 16px;
+	}
+}
+
+.title {
+	margin-bottom: 32px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-feature-settings: "tnum" on, "lnum" on;
+	@include media("within", "lg") {
+		margin-bottom: 12px;
+	}
+	@include media("within", "md") {
+		margin-bottom: 12px;
+	}
+}
+
+.description {
+	max-width: 660px;
+	margin-bottom: 34px;
+	font-size: 16px;
+	line-height: 140%;
+	@include media("within", "lg") {
+		max-width: 680px;
+		margin-bottom: 24px;
+		font-size: 14px;
+	}
+
+	@include media("within", "md") {
+		max-width: unset;
+		margin-bottom: 18px;
+		font-size: 14px;
+	}
+	@include media("max", "sm") {
+		display: none;
+	}
+}
+
+.info {
+	padding: 40px;
+	background: $cream;
+	@include media("within", "lg") {
+		padding: 24px;
+	}
+	@include media("within", "md") {
+		padding: 20px 20px 36px;
+	}
+	@include media("max", "sm") {
+		padding: 16px 0 16px 16px;
+		overflow: hidden;
+	}
+}
+
+.list {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-bottom: 60px;
+	@include media("within", "lg") {
+		margin-bottom: 40px;
+	}
+	@include media("max", "md") {
+		margin-bottom: 24px;
+	}
+	@include media("max", "sm") {
+		overflow: hidden;
+	}
+}
+
+.more {
+	text-align: center;
+}
+
+.more__text {
+	margin-bottom: 60px;
+	@include media("within", "lg") {
+		margin-bottom: 40px;
+	}
+	@include media("max", "md") {
+		margin-bottom: 32px;
+	}
+}

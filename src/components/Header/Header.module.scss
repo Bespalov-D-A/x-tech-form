@@ -1,0 +1,26 @@
+@import "./../../sass/index.scss";
+
+.header {
+	position: relative;
+	display: flex;
+	flex-flow: column wrap;
+	max-width: 1920px;
+	padding-left: 304px;
+	margin-bottom: 120px;
+	overflow: hidden;
+	@media screen and (max-width: 1919px) {
+		padding-left: 40px;
+	}
+	@include media("within", "lg") {
+		padding-left: 40px;
+	}
+
+	@include media("within", "md") {
+		padding-left: 27px;
+		margin-bottom: 56px;
+	}
+	@include media("max", "sm") {
+		padding: 0 0 0 16px;
+		margin-bottom: 0;
+	}
+}

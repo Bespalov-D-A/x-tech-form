@@ -1,0 +1,48 @@
+@import "./../../../sass/index.scss";
+
+.btn {
+	position: relative;
+	display: inline-block;
+	height: 24px;
+		margin-right: 24px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: $blue1;
+	transition: all ease-out 0.1s;
+	&.blue {
+		color: $blue1;
+		&:hover {
+			color: $black;
+		}
+	}
+	&.black {
+		color: $black;
+		&:hover {
+			color: $blue1;
+		}
+	}
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		right: -32px;
+		width: 24px;
+		height: 24px;
+		background: url("./../../../img/ico/common/Arrow.svg") no-repeat;
+		background-position: center center;
+		transition: all ease-out 0.1s;
+	}
+	&:hover {
+		cursor: pointer;
+		color: $black;
+		&:after {
+			right: -40px;
+		}
+	}
+}

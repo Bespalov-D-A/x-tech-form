@@ -1,0 +1,54 @@
+@import "./../../sass/index.scss";
+
+.event {
+	max-width: 1392px;
+	margin: 0 auto 154px;
+	padding: 40px 40px 68px;
+	@include media("within", "lg") {
+		padding: 40px 16px 0;
+		margin-bottom: 40px;
+	}
+
+	@include media("within", "md") {
+		padding: 28px 16px 0;
+		margin-bottom: 40px;
+	}
+	@include media("max", "sm") {
+		padding: 32px 0 0;
+		margin-bottom: 0;
+	}
+}
+
+.wrapper {
+	padding: 40px;
+	background: $cream;
+	@include media("within", "lg") {
+		padding: 24px;
+	}
+	@include media("max", "md") {
+		padding: 16px;
+		overflow: hidden;
+	}
+}
+
+.list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 25px;
+	@include media("within", "lg") {
+	}
+}
+
+.title {
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}

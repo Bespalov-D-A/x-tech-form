@@ -1,0 +1,90 @@
+@import "./mixin/fontMixin.scss";
+
+@include font-face(
+	"Roboto",
+	"./../../fonts/Roboto/Roboto-Regular",
+	400,
+	"normal"
+);
+@include font-face("Roboto", "./../../fonts/Roboto/Roboto-Bold", 700, "bold");
+
+/*IBM_plex_mono*/
+@include font-face(
+	"IBM_plex_mono",
+	"./../../fonts/IBM_plex_mono/IBMPlexMono-Regular"
+);
+@include font-face(
+	"IBM_plex_mono",
+	"./../../fonts/IBM_plex_mono/IBMPlexMono-Bold",
+	700,
+	"bold"
+);
+@include font-face(
+	"IBM_plex_mono",
+	"./../../fonts/IBM_plex_mono/IBMPlexMono-SemiBold",
+	600,
+	"semibold"
+);
+
+/*IBM_plex_sans*/
+@include font-face(
+	"IBM_plex_sans",
+	"./../../fonts/IBM_plex_sans/IBMPlexSans-Bold",
+	700,
+	"bold"
+);
+@include font-face(
+	"IBM_plex_sans",
+	"./../../fonts/IBM_plex_sans/IBMPlexSans-SemiBold",
+	600,
+	"semibold"
+);
+
+/*PT_sans_caption*/
+@include font-face("PT_sans", "./../../fonts/PT_sans/PTSansCaption-Regular");
+@include font-face(
+	"PT_sans",
+	"./../../fonts/PT_sans/PTSansCaption-Bold",
+	700,
+	"bold"
+);
+
+/*Commissioner*/
+@include font-face(
+	"Commissioner",
+	"./../../fonts/commissioner/Commissioner-Regular"
+);
+@include font-face(
+	"Commissioner",
+	"./../../fonts/commissioner/Commissioner-Bold",
+	700,
+	"bold"
+);
+
+/*Jost*/
+@include font-face("Jost", "./../../fonts/jost/Jost-Bold", 700, "bold");
+
+/*Montserrat*/
+@include font-face("Montserrat", "./../../fonts/montserrat/Montserrat-Regular");
+@include font-face(
+	"Montserrat",
+	"./../../fonts/montserrat/Montserrat-Bold",
+	700,
+	"bold"
+);
+@include font-face(
+	"Montserrat",
+	"./../../fonts/montserrat/Montserrat-Regular",
+	600,
+	semibold
+);
+
+/*Sanchez*/
+@include font-face('Sanchez', './../../fonts/sanchez/Sanchez-Regular');
+
+/*Ubuntu*/
+@include font-face('Ubuntu', './../../fonts/ubuntu/Ubuntu-Regular');
+@include font-face('Ubuntu', './../../fonts/ubuntu/Ubuntu-Bold', 700, 'bold');
+@include font-face('Ubuntu', './../../fonts/ubuntu/Ubuntu-Medium', 500, 'medium');
+@include font-face('Ubuntu', './../../fonts/ubuntu/Ubuntu-Light', 300, 'light');
+

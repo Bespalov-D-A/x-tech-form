@@ -1,0 +1,131 @@
+@import "./../../sass/index.scss";
+
+.footer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-width: 1392px;
+	margin: 0 auto;
+	padding: 40px 0;
+	@include media("within", "lg") {
+		padding: 40px;
+	}
+	@include media("within", "md") {
+		flex-flow: column-reverse wrap;
+		padding: 40px 40px 36px;
+	}
+	@include media('max', 'sm') {
+		flex-flow: column-reverse wrap;
+		padding: 32px 16px 0;
+	}
+}
+
+.right-side {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 400px;
+	@include media("within", "md") {
+		flex-flow: row wrap;
+		max-width: unset;
+	}
+	@include media('max', 'sm') {
+	align-items: center;
+	padding: 16px 0;
+	& >:first-child {
+		margin-bottom: 32px;
+	}
+	}
+}
+
+.copyright {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	opacity: 0.8;
+	@include media("within", "lg") {
+		margin-bottom: 16px;
+	}
+
+	@include media("within", "md") {
+		text-align: right;
+	}
+}
+
+.left-side {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	@include media("within", "md") {
+		margin-bottom: 70px;
+		font-size: 14px;
+	}
+	@include media('max', 'sm') {
+flex-flow: column wrap;
+& > * {
+	margin-bottom: 16px;
+}
+	}
+}
+
+.navigation {
+	max-width: 224px;
+	width: 100%;
+	text-align: left;
+	.title {
+		margin-bottom: 11px;
+	}
+	@include media("within", "lg") {
+		font-size: 14px;
+		max-width: 184px;
+	}
+
+	@include media("within", "md") {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+.social {
+	width: 200px;
+	margin-right: 90px;
+	@include media("within", "lg") {
+		margin-right: 0;
+	}
+	@include media("within", "md") {
+		width: 135px;
+		margin-right: 40px;
+	}
+}
+
+.info {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	max-width: 304px;
+	max-height: 200px;
+	@include media("within", "md") {
+		max-width: 135px;
+	}
+	@include media('max', 'sm') {
+	&>:first-child {
+		margin-bottom: 32px;
+	}
+	}
+	p {
+		line-height: 140%;
+		opacity: 0.8;
+	}
+}
+
+.title {
+	margin-bottom: 8px;
+	font-family: "IBM_Plex_Sans";
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 32px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	opacity: 0.8;
+}

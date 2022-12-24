@@ -1,0 +1,148 @@
+@import "./../../../sass/index.scss";
+
+.header-content {
+	display: flex;
+	height: 600px;
+	padding-right: 830px;
+	@include media("within", "lg") {
+		height: 504px;
+		padding-right: 0;
+	}
+	@include media("max", "md") {
+		height: 507px;
+		padding-right: 380px;
+	}
+	@include media("max", "sm") {
+		min-width: 300px;
+		height: 592px;
+	}
+}
+
+.mount {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: 0.7;
+	@include media("min", "sm") {
+	}
+}
+
+.content {
+	position: relative;
+	max-width: 630px;
+	width: 100%;
+	@media screen and (max-width: 1919px) {
+		max-width: 1320px;
+	}
+}
+
+.wrap {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 120px;
+	@include media("within", "md") {
+		top: 56px;
+	}
+	@include media("max", "sm") {
+		max-width: 280px;
+		top: 72px;
+	}
+}
+
+.wrap__title {
+	margin-bottom: 16px;
+	font-family: "Commissioner";
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	font-feature-settings: "tnum" on, "lnum" on;
+	text-transform: uppercase;
+	color: $black;
+	@include media("within", "md") {
+		text-shadow: -3px -3px 6px #ffffff, 3px 3px 6px rgba(49, 69, 106, 0.3);
+	}
+}
+
+.wrap__desc {
+	margin-bottom: 96px;
+	@media screen and (max-width: 1448px) {
+		margin-bottom: 60px;
+	}
+	@include font-size($lg-text);
+	letter-spacing: 0.04em;
+	color: $gray4;
+	@include media("within", "lg") {
+		margin-bottom: 56px;
+	}
+
+	@include media("max", "sm") {
+		display: flex;
+		flex-flow: column wrap;
+		margin-bottom: 23px;
+		font-size: 20px;
+		line-height: 24px;
+		opacity: 0.9;
+		color: $black;
+	}
+}
+
+.img {
+	position: relative;
+	width: 1px;
+	height: 600px;
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 830px;
+		height: 724px;
+		top: -53px;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-image: url("./../../../img/x-header.png");
+		@include media("within", "lg") {
+			background-size: 672px;
+			background-repeat: no-repeat;
+		}
+
+		@include media("within", "md") {
+			top: -40px;
+			left: -80px;
+			background-size: 617px;
+			background-repeat: no-repeat;
+		}
+		@include media("max", "sm") {
+			background-size: 672px;
+			background-repeat: no-repeat;
+		}
+	}
+	@include media("within", "lg") {
+		position: absolute;
+		right: 672px;
+		top: 0;
+	}
+	@include media("max", "sm") {
+		position: absolute;
+		right: 500px;
+		top: 0;
+		z-index: -1;
+	}
+}
+
+.btn-wrap {
+	@include media("within", "md") {
+		position: absolute;
+		bottom: 120px;
+		left: 0;
+	}
+	@include media("max", "sm") {
+		position: absolute;
+		bottom: 156px;
+		left: 0;
+	}
+}

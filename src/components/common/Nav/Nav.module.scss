@@ -1,0 +1,73 @@
+@import "./../../../sass/index.scss";
+
+.menu {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	@include media('max', 'md') {
+	flex-flow: column;
+	align-items: flex-start;
+	}
+	&.column {
+		flex-flow: column wrap;
+		align-items: flex-start;
+		margin-right: 0;
+		.menu-block {
+			margin-right: 0;
+			&:not(:last-child) {
+			margin-bottom: 18px;
+			}
+			&.active {
+				&:after {
+				}
+				a.link {
+					color: $gray4;
+				}
+			}
+		}
+	}
+}
+
+.menu {
+	display: flex;
+	margin-right: 80px;
+	@include media("within", "lg") {
+		margin-right: 0;
+	}
+}
+
+.menu-block {
+	margin-right: 60px;
+	@include media("within", "lg") {
+		margin-right: 40px;
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+	&.active {
+		position: relative;
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 24px;
+			border-bottom: solid 2px $blue1;
+			z-index: -1;
+		}
+		a {
+			color: $gray1;
+		}
+	}
+	a.link {
+		font-size: 16px;
+		text-decoration: none;
+		color: $gray4;
+		&:hover {
+			color: $gray3;
+		}
+	}
+}

@@ -1,0 +1,162 @@
+@import "./../../../sass/index.scss";
+
+.btn {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	height: 57px;
+	font-family: "Commissioner";
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	border: solid 1px $gray4;
+	color: $blue1;
+	box-shadow: 0px 2px 4px rgba(73, 67, 98, 0.03),
+		0px 3px 8px rgba(73, 67, 98, 0.05), 0px 4px 16px rgba(73, 67, 98, 0.15);
+	transition: all ease-in-out 0.2s;
+	z-index: 1;
+	&.blue {
+		color: #fff;
+		background: $blue1;
+		&:hover {
+			background: $blue2;
+		}
+	}
+	&.white {
+		color: $blue1;
+		background: #fff;
+	}
+	&.primary {
+		border: none;
+		color: #fff;
+		background: $blue1;
+		box-shadow: 0px 2px 4px rgba(62, 100, 200, 0.1),
+			0px 3px 8px rgba(62, 100, 200, 0.15), 0px 4px 16px rgba(62, 100, 200, 0.4);
+		&:hover {
+			background: $blue2;
+			box-shadow: none;
+		}
+	}
+
+	&:hover {
+		box-shadow: none;
+		cursor: pointer;
+		.arrow {
+			right: -61px;
+			&.blue {
+				fill: $blue2;
+			}
+		}
+		.slice,
+		.union {
+			&.blue {
+				border-left-color: $blue2;
+			}
+		}
+		.slice.union {
+			top: 0;
+			right: -45px;
+			opacity: 0.2;
+		}
+		.arrow-in {
+			&:before {
+				right: -43px;
+			}
+		}
+	}
+}
+
+.arrow {
+	position: absolute;
+	right: -56px;
+	top: 0;
+	bottom: 0;
+	height: 56px;
+	width: 56px;
+	transition: all ease-in-out 0.2s;
+	z-index: 0;
+	fill: $blue1;
+	&.white {
+		fill: #fff;
+	}
+	&.blue {
+		fill: $blue1;
+	}
+}
+
+.arrow-in {
+	position: relative;
+	color: $black;
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 24px;
+		height: 24px;
+		top: -4px;
+		right: -33px;
+		background: url("./../../../img/ico/common/Arrow.svg") no-repeat;
+		background-position: center center;
+		transition: all linear 0.1s;
+	}
+}
+
+.slice {
+	z-index: 11;
+}
+.union {
+	z-index: 10;
+}
+
+.slice,
+.union {
+	position: absolute;
+	top: -1px;
+	right: -28.5px;
+	width: 0;
+	height: 0;
+	border-top: 28.5px solid transparent;
+	border-left: 28.5px solid;
+	border-bottom: 28.5px solid transparent;
+	transition: all linear 0.2s;
+	&.blue {
+		border-left-color: $blue1;
+	}
+	&.white {
+		border-left-color: #fff;
+	}
+}
+
+.union {
+	opacity: 0;
+	right: -43px;
+	border-top: 28px solid transparent;
+	border-left: 28px solid;
+	border-bottom: 28px solid transparent;
+
+	&:after {
+		content: "";
+		display: block;
+		position: relative;
+		width: 20px;
+		height: 57px;
+		top: -29px;
+		left: -45px;
+	}
+	&.red {
+		&:after {
+			background: red;
+		}
+	}
+	&.blue {
+		&:after {
+			background: $blue1;
+		}
+	}
+	&.white {
+		&:after {
+			background: #fff;
+		}
+	}
+}

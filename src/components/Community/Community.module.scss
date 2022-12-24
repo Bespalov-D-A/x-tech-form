@@ -1,0 +1,93 @@
+@import "./../../sass/index.scss";
+
+.community {
+	display: flex;
+	max-width: 1312px;
+	margin: 0 auto;
+	padding: 130px 0 40px;
+	@include media("within", "lg") {
+		padding: 40px 40px 36px;
+	}
+	@include media("within", "md") {
+		padding: 0 28px 00px;
+	}
+	@include media("max", "sm") {
+		flex-flow: column wrap;
+		padding: 32px 16px 0;
+	}
+}
+
+.desc-block {
+	flex: 1 1;
+	padding-top: 16px;
+}
+
+.title {
+	margin-bottom: 24px;
+	font-family: "Commissioner";
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.desc {
+	padding-right: 16px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+	opacity: 0.9;
+	@include media("within", "lg") {
+		font-size: 14px;
+		line-height: 120%;
+	}
+
+	@include media("within", "md") {
+		font-size: 14px;
+		line-height: 120%;
+	}
+	@include media("max", "sm") {
+		font-size: 12px;
+		padding-right: 0;
+	}
+}
+
+.video-block {
+	flex: 1 1;
+	width: 100%;
+	max-width: 752px;
+	margin-top: 80px;
+	@include media("max", "sm") {
+		margin-top: 20px;
+	}
+}
+
+.video-wrap {
+	position: relative;
+	padding-top: 58.62%;
+}
+
+.video {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	@include media("within", "lg") {
+	}
+}
+
+.mount {
+	position: absolute;
+	display: block;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	filter: blur(6px);
+	opacity: 0.6;
+	@include media("within", "lg") {
+	}
+}
