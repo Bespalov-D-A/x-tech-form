@@ -42,8 +42,9 @@ const employees = [
 
 const CreateTeam: FC = () => {
   const remapEmployees = (arr: IEmployee[]) => {
-    return arr.map((employee: IEmployee) => (
+    return arr.map((employee: IEmployee, index) => (
       <EmployeeItem
+        key={index}
         name={employee.name}
         lastName={employee.lastName}
         specialization={employee.spec}

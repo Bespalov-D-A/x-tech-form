@@ -61,8 +61,9 @@ const data = [
 
 const Technologies: FC = () => {
   const remapTech = (arr: ITechnology[]) => {
-    return arr.map((item: ITechnology) => (
+    return arr.map((item: ITechnology, index) => (
       <TechnoItem
+        key={index}
         title={item.title}
         description={item.description}
         photo={item.photo}
