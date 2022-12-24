@@ -19,6 +19,7 @@ const MobileMenu: FC<MobileMenuI> = (props) => {
   };
 
   const closeMenu = () => {
+    setIsOpen(false)
     mobileMenuRef.current.style.left = "-460px";
   };
 
